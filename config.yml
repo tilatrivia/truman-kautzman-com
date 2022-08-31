@@ -2,3 +2,37 @@ baseURL: 'http://trumankautzman.com/'
 languageCode: 'en-us'
 title: 'Truman Kautzman'
 theme: PaperMod
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: inspiration
+      name: Inspiration
+      url: /inspiration/
+      weight: 30
+
+params:
+    profileMode:
+        enabled: true
+        title: "Truman Kautzman" # optional default will be site title
+        subtitle: "Software Engineer and Designer"
+        imageUrl: "images/t-logo.png" # optional
+        imageTitle: "<title of image as alt>" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+          - name: About
+            url: "/about"
+          - name: Projects
+            url: "/projects"
+
+    socialIcons: # optional
+        - name: "Github"
+          url: "https://github.com/tilatrivia"

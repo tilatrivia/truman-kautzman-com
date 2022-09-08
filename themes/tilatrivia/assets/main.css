@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    @apply font-light
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    @apply text-4xl font-medium mt-8
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    @apply text-3xl font-medium mt-6
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    @apply text-2xl font-medium mt-5
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    @apply text-xl font-medium mt-4
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    @apply text-lg font-medium mt-3
+}
+
+h6 {
+    font-family: 'Roboto', sans-serif;
+    @apply text-base font-medium mt-2
+}
+
+p {
+    @apply mt-2 text-lg
+}
+
+a {
+    @apply text-primary-light
+}
+
+a:hover {
+    @apply text-primary-dark
+}
+
+strong {
+    @apply font-semibold
+}
+
+blockquote {
+    @apply border-l-8
+}
+
+blockquote p {
+    @apply ml-2
+}
+
+ol {
+    @apply mt-2 list-decimal
+}
+
+ol li {
+    @apply mt-1 ml-8
+}
+
+ul {
+    @apply mt-2 list-disc
+}
+
+ul li {
+    @apply mt-1 ml-8
+}
+
+.large-shadow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}

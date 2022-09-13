@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content" class="max-w-2xl m-auto px-2 bg-white text-black">
-        {{- block "main" . }}{{- end }}
+{{- partial "head.html" . -}}
+
+<body>
+    <div>
+        <div>
+            {{- partial "header.html" . -}}
         </div>
-        {{- partial "footer.html" . -}}
-    </body>
+        <div id="content" class="max-w-2xl w-full mx-auto mb-12 px-2">
+            {{- block "main" . }}{{- end }}
+        </div>
+        <div>
+            {{- partial "footer.html" . -}}
+        </div>
+    </div>
+</body>
+
 </html>

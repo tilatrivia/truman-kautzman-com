@@ -1,13 +1,13 @@
-<div class="bg-primary  large-shadow">
+<div class="bg-primary block-shadow">
     <div class="max-w-2xl m-auto px-2 py-4 flex flex-col sm:flex-row justify-between content-center">
-        <a class="m-0 text-4xl text-white hover:text-white" href="{{ .Site.BaseURL }}">
+        <a class="m-0 text-4xl text-white hover:text-white text-center sm:text-left" href="{{ .Site.BaseURL }}">
             {{ .Site.Title }}
         </a>
 
-        <ul class="main-menu flex flex-row gap-4">
+        <ul class="main-menu flex flex-row gap-2 justify-center sm:justify-start">
             {{ range.Site.Menus.main }}
             <li class="list-none m-0">
-                <a href="{{ .URL }}" class="text-white hover:text-white">{{ .Name }}</a>
+                <a href="{{ .URL }}" class="text-white hover:text-white nav-button">{{ .Name }}</a>
             </li>
             {{ end }}
         </ul>

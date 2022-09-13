@@ -23,5 +23,9 @@ This is some sample text
 
 `code`
 
+Some text
+
 ---
+
+More text
 

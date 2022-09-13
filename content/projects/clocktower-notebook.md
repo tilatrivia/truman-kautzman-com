@@ -1,15 +1,13 @@
 ---
 title: "Clocktower Notebook"
-cover.image: "clocktower-icon.png"
-cover.relative: true
+image: "clocktower-icon.png"
+description: "A note-keeping tool for playing Blood on the Clocktower"
+link: "https://clocktower.trumankautzman.com/"
+source: "https://github.com/tilatrivia/clocktower"
 ---
 
-[clocktower.trumankautzman.com](https://clocktower.trumankautzman.com/)
 
-Note keeping tool for playing Blood on the Clocktower.
 
 Built with Flutter.
 
-[Use Clocktower Notebook](https://clocktower.trumankautzman.com/)
-
-[Source Code](https://github.com/tilatrivia/clocktower-notebook)
+Use Clocktower Notebook at [clocktower.trumank.dev](https://clocktower.trumank.dev/)

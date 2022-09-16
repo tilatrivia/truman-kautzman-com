@@ -4,15 +4,15 @@
 
 <body>
     <div>
-        <div>
+        <header>
             {{- partial "header.html" . -}}
-        </div>
-        <div id="content" class="max-w-2xl w-full mx-auto mb-12 px-2">
+        </header>
+        <div id="content" class="max-w-6xl w-full mx-auto mb-12 px-2">
             {{- block "main" . }}{{- end }}
         </div>
-        <div>
+        <footer>
             {{- partial "footer.html" . -}}
-        </div>
+        </footer>
     </div>
 </body>
 

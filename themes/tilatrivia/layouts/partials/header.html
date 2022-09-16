@@ -1,13 +1,17 @@
-<div class="bg-primary block-shadow">
-    <div class="max-w-2xl m-auto px-2 py-4 flex flex-col sm:flex-row justify-between content-center">
-        <a class="m-0 text-4xl text-white hover:text-white text-center sm:text-left" href="{{ .Site.BaseURL }}">
-            {{ .Site.Title }}
+<div class="bg-primary">
+    <div class="max-w-6xl m-auto px-2 py-4 flex flex-col sm:flex-row items-center">
+        <a href="{{ .Site.BaseURL }}">
+            <img src="/header-logo.png" class="h-16">
+        </a>
+        <a class="m-0 text-4xl font-bold text-white hover:text-white text-center sm:text-left flex-grow sm:first-letter:text-[0]" href="{{ .Site.BaseURL }}">
+            {{/*  {{ .Site.Title }}  */}}
+            Truman Kautzman
         </a>
 
-        <ul class="main-menu flex flex-row gap-2 justify-center sm:justify-start">
+        <ul class="flex flex-row m-0 justify-center sm:justify-start">
             {{ range.Site.Menus.main }}
             <li class="list-none m-0">
-                <a href="{{ .URL }}" class="text-white hover:text-white nav-button">{{ .Name }}</a>
+                <a href="{{ .URL }}" class="font-bold text-white hover:text-white button button-nav">{{ .Name }}</a>
             </li>
             {{ end }}
         </ul>

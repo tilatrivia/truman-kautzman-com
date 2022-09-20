@@ -144,3 +144,19 @@ hr {
 .button-nav {
     @apply px-4
 }
+
+.bg-color-cycle:nth-child(3n) {
+    @apply bg-accent-light
+}
+
+.bg-color-cycle:nth-child(3n + 1) {
+    @apply bg-accent-dark
+}
+
+.bg-color-cycle:nth-child(3n + 2) {
+    @apply bg-accent
+}
+
+.bg-color-cycle:hover {
+    @apply bg-opacity-90
+}

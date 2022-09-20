@@ -3,6 +3,9 @@ languageCode: 'en-us'
 title: 'Truman Kautzman'
 theme: 'tilatrivia'
 
+params:
+  description: "Software Engineer and Designer"
+
 taxonomies:
   post: posts
   project: projects
@@ -14,12 +17,18 @@ menu:
       name: "About"
       url: "/about"
       weight: 10
+      params:
+        description: "Qualifications, Skills, Education and, Experience"
     - identifier: "projects"
       name: "Projects"
       url: "/projects"
       weight: 20
+      params:
+        description: "Learn About and Use Personal Projects of Mine"
     - identifier: "inspiration"
       name: "Inspiration"
       url: "/inspiration"
       weight: 30
+      params:
+        description: "A Collection of People, Designs, and Concepts that Inspire me"
 

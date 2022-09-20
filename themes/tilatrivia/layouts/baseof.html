@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+    <div>
+        {{- partial "hero.html" . -}}
+
+        <div id="content" class="max-w-6xl w-full mx-auto mb-12 px-2">
+            {{- block "main" . }}{{- end }}
+        </div>
+
+        <footer>
+            {{- partial "footer.html" . -}}
+        </footer>
+    </div>
+</body>
+
+</html>

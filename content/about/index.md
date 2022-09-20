@@ -10,9 +10,16 @@ title: "About"
 * Java Android
 * Flutter, Dart
 
-## Proficiencies
+## Skills
 * User Experience Design
 * Testing and Formal Verification
+* Detail Oriented
+
+## Education
+### Pursuing a Bachelor's of Science in Computer Science
+*Brigham Young University - Provo, UT - Graduating April 2023*
+
+Courses so far include web development, data structures, discrete math, computer systems, computational theory, user experience design, and software engineering. Other classes include those in music and religion.
 
 ## Experience
 ### Lighting Technician for BYU OIT AV Productions
@@ -29,9 +36,3 @@ In addition to maintaining the BYU Marching Band's Website and posting news upda
 *Winter 2020*
 
 Being a Teaching Assistant, I taught concepts and applications of computer systems in classroom and one-on-one scenarios. Doing this expanded knowledge of binary logic, assembly, and C. I also worked with instructors and other teaching assistants to oversee assignment grading including using Linux shell scripts to validate student code.
-
-## Education
-### Pursuing a Bachelor's of Science in Computer Science
-*Brigham Young University - Provo, UT*
-
-Courses so far include web development, data structures, discrete math, computer systems, computational theory, user experience design, and software engineering. Other classes include those in music and religion.

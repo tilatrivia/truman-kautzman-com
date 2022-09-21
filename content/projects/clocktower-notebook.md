@@ -1,6 +1,5 @@
 ---
 title: "Clocktower Notebook"
-layout: 'project'
 image: "clocktower-icon.png"
 description: "A note-keeping tool for playing Blood on the Clocktower"
 link: "https://clocktower.trumankautzman.com/"

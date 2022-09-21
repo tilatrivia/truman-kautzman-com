@@ -9,11 +9,6 @@ params:
     email: 'tilatrivia@gmail.com'
     github: 'tilatrivia'
 
-taxonomies:
-  post: posts
-  project: projects
-  inspiration: inspirations
-
 menu:
   main:
     - identifier: "resume"

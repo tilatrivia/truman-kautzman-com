@@ -5,8 +5,9 @@ theme: 'tilatrivia'
 
 params:
   description: "Software Engineer and Designer"
-  location: 'Provo, UT'
-  email: 'tilatrivia@gmail.com'
+  social:
+    email: 'tilatrivia@gmail.com'
+    github: 'tilatrivia'
 
 taxonomies:
   post: posts
@@ -15,8 +16,8 @@ taxonomies:
 
 menu:
   main:
-    - identifier: "about"
-      name: "About"
+    - identifier: "resume"
+      name: "Resume"
       url: "/about"
       weight: 10
       params:

@@ -1,0 +1,23 @@
+<div class="bg-primary">
+    <div class="max-w-6xl m-auto px-2 py-4 flex flex-col sm:flex-row items-center">
+        <a href="{{ .Site.BaseURL }}">
+            <img src="/header-logo.png" class="h-16">
+        </a>
+        <a class="flex-grow" href="{{ .Site.BaseURL }}">
+            <p class="site-title hidden sm:block">ruman Kautzman</p>
+            <p class="site-title block sm:hidden">Truman Kautzman</p>
+        </a>
+
+        <ul class="flex flex-row flex-wrap m-0 justify-center sm:justify-start">
+            {{ range.Site.Menus.main }}
+            <li class="list-none m-0">
+                <a href="{{ .URL }}" class="font-bold text-white hover:text-white button button-nav">{{ .Name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+
+    </div>
+</div>
+
+
+

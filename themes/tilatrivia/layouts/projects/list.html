@@ -1,0 +1,41 @@
+{{ define "main" }}
+<main>
+
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ range $page := .Pages }}
+    <article class="post-snippet">
+        <div href="{{ .Permalink }}" class="flex flex-col sm:flex-row mt-12 gap-4">
+            {{ with .Params.image }}
+            <a href="{{ $page.Permalink }}" class="bg-accent sm:w-64 h-48 flex-shrink-0">
+                <img src="./{{ . }}" class="w-full h-full object-cover">
+            </a>
+            {{ end }}
+
+            <div class="">
+                <h1 class="mt-0">{{ .Title }}</h1>
+
+                {{ with .Description }}
+                <p>{{ . }}</p>
+                {{ end }}
+
+                <div class="flex flex-row gap-4 flex-wrap mt-2">
+                    {{ with .Params.link }}
+                    <a class="button button-accent" href="{{ . }}" target="_blank">Visit</a>
+                    {{ end }}
+    
+                    {{ with .Params.source }}
+                    <a class="button" href="{{ . }}" target="_blank">Source</a>
+                    {{ end }}
+
+                    <a class="button" href="{{ .Permalink }}">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    {{ end }}
+
+</main>
+{{ end }}

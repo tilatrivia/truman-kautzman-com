@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main>
+
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ range $page := .Pages }}
+    <article class="post-snippet">
+        <div href="{{ .Permalink }}" class="flex flex-col sm:flex-row mt-12 gap-4">
+
+            <h1 class="mt-0">{{ .Title }}</h1>
+
+            {{ with .Description }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+    </article>
+    {{ end }}
+
+</main>
+{{ end }}

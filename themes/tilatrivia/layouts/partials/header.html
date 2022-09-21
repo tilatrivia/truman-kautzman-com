@@ -4,11 +4,11 @@
             <img src="/header-logo.png" class="h-16">
         </a>
         <a class="flex-grow" href="{{ .Site.BaseURL }}">
-            <p class="mx-0 my-2 text-4xl font-bold text-white hover:text-white text-center sm:text-left hidden sm:block">ruman Kautzman</p>
-            <p class="mx-0 my-2 text-4xl font-bold text-white hover:text-white text-center sm:text-left  block sm:hidden">Truman Kautzman</p>
+            <p class="site-title hidden sm:block">ruman Kautzman</p>
+            <p class="site-title block sm:hidden">Truman Kautzman</p>
         </a>
 
-        <ul class="flex flex-row m-0 justify-center sm:justify-start">
+        <ul class="flex flex-row flex-wrap m-0 justify-center sm:justify-start">
             {{ range.Site.Menus.main }}
             <li class="list-none m-0">
                 <a href="{{ .URL }}" class="font-bold text-white hover:text-white button button-nav">{{ .Name }}</a>

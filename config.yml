@@ -5,6 +5,8 @@ theme: 'tilatrivia'
 
 params:
   description: "Software Engineer and Designer"
+  location: 'Provo, UT'
+  email: 'tilatrivia@gmail.com'
 
 taxonomies:
   post: posts

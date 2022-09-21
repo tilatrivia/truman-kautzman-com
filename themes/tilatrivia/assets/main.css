@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 * {
-    font-family: 'Open Sans', sans-serif;
-    @apply font-light
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    @apply text-lg
 }
 
 
@@ -28,37 +31,47 @@ body > div {
 }
 
 p {
-    @apply mt-2 text-lg
+    @apply mt-4
+}
+
+strong, b {
+    font-weight: 400;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
     @apply text-4xl font-medium mt-8
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
-    @apply text-3xl font-medium mt-6
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    @apply text-3xl font-medium mt-8
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
-    @apply text-2xl font-medium mt-5
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    @apply text-2xl font-medium mt-8
 }
 
 h4 {
-    font-family: 'Roboto', sans-serif;
-    @apply text-xl font-medium mt-4
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    @apply text-xl font-medium mt-8
 }
 
 h5 {
-    font-family: 'Roboto', sans-serif;
-    @apply text-lg font-medium mt-3
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    @apply text-lg font-medium mt-8
 }
 
 h6 {
-    font-family: 'Roboto', sans-serif;
-    @apply text-base font-medium mt-2
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    @apply text-base font-medium mt-8
 }
 
 a {
@@ -125,7 +138,7 @@ hr {
 }
 
 .button {
-    @apply block px-6 py-2 bg-primary text-light font-semibold;
+    @apply block px-6 py-2 bg-primary text-light font-normal;
     transition: background-color linear 0.1s;
 }
 
@@ -159,4 +172,10 @@ hr {
 
 .bg-color-cycle:hover {
     @apply bg-opacity-90
+}
+
+.site-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    @apply mx-0 my-2 text-4xl font-bold text-white hover:text-white text-center sm:text-left
 }

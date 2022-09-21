@@ -7,13 +7,15 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Ubuntu:wght@500&display=swap"
+		rel="stylesheet">
 
-	{{ $style := resources.Get "style.css" }}    
-    <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+	{{ $style := resources.Get "style.css" }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
 
 	{{ with .OutputFormats.Get "rss" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ printf `
+	<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
 
 </head>

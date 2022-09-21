@@ -1,4 +1,4 @@
-<div class="bg-primary py-12 px-2 flex flex-col items-center gap-4">
+<div class="bg-primary py-16 px-2 flex flex-col items-center gap-4">
     <p class="text-light text-center font-bold text-5xl">{{ .Site.Title }}</p>
     <div class="">
         <img src="/header-logo.png" class="h-48 w-48 flex-none">
@@ -6,8 +6,18 @@
     <p class="text-light text-center text-2xl m-0">{{ .Site.Params.description }}</p>
 </div>
 
+<div class="bg-grey flex flex-col py-8 gap-4 justify-center items-center">
+    {{ with .Site.Params.location }}
+    <p class="text-white text-center m-0">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Site.Params.email }}
+    <a class="text-white text-center m-0 w-min" href="mailto:{{ . }}">{{ . }}</a>
+    {{ end }}
+</div>
+
 <div class="bg-black">
-    <div class="flex flex-col m-0 justify-center sm:justify-start ">
+    <div class="flex flex-col justify-center sm:justify-start ">
         {{ range.Site.Menus.main }}
         <a href="{{ .URL }}" class="list-none m-0 py-8 bg-color-cycle">
             <p class="font-bold text-2xl text-white text-center mt-0">{{ .Name }}</p>

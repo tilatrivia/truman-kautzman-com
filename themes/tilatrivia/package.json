@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-tw": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css",
+    "build-tw": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

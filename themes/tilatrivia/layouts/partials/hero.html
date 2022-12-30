@@ -19,17 +19,3 @@
         {{ end }}
     </div>
 </div>
-
-
-<div class="bg-black">
-    <div class="flex flex-col justify-center sm:justify-start ">
-        {{ range.Site.Menus.main }}
-        <a href="{{ .URL }}" class="list-none m-0 py-8 bg-color-cycle">
-            <p class="font-bold text-2xl text-white text-center mt-0">{{ .Name }}</p>
-            {{ with .Params.description }}
-            <p class="text-white text-center mt-2">{{ . }}</p>
-            {{ end }}
-        </a>
-        {{ end }}
-    </div>
-</div>

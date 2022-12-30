@@ -267,12 +267,16 @@ main {
 main>div {
     margin: 0 auto;
     max-width: calc(var(--tk-layout-max-width) + 4rem);
-    padding: 0.1rem 0.5rem 2rem;
+    padding: 2rem 0.5rem 4rem;
+}
+
+main>div>*:first-child {
+    margin-top: 0;
 }
 
 @media screen and (min-width: 32rem) {
     main>div {
-        padding: 0.1rem 2rem 2rem;
+        padding: 2rem 2rem 4rem;
     }
 }
 
@@ -452,7 +456,7 @@ footer {
 
 @media screen and (min-width: 32rem) {
     footer {
-        padding: 8rem 2rem;
+        padding: 4rem 2rem;
     }
 }
 

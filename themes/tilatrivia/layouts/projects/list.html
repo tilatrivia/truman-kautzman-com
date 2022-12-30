@@ -1,31 +1,35 @@
 {{ define "main" }}
 <main>
+    <div>
+        <h1>{{ .Title }}</h1>
 
-    <h1>{{ .Title }}</h1>
+        {{ .Content }}
 
-    {{ .Content }}
-
-    {{ range $page := .Pages }}
-    <article class="post-snippet">
-        <div class="flex flex-col sm:flex-row mt-12 gap-4">
-            {{ with .Params.image }}
-            <a href="{{ $page.RelPermalink }}" class="bg-accent sm:w-64 h-48 flex-shrink-0">
-                <img src="./{{ . }}" class="w-full h-full object-cover">
+        {{ range $page := .Pages }}
+        <article class="tile tile-hover">
+            <a class="tile-icon" href="{{ $page.RelPermalink }}">
+                {{ with .Params.image }}
+                <img src="./{{ . }}" />
+                {{ else }}
+                <svg viewBox="0 0 384 512" width="100" title="file-alt">
+                    <path
+                        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" />
+                </svg>
+                {{ end }}
             </a>
-            {{ end }}
 
-            <div class="">
-                <h1 class="mt-0">{{ .Title }}</h1>
+            <div class="tile-content">
+                <h3>{{ .Title }}</h3>
 
                 {{ with .Description }}
                 <p>{{ . }}</p>
                 {{ end }}
 
-                <div class="flex flex-row gap-4 flex-wrap mt-2">
+                <div class="buttons">
                     {{ with .Params.link }}
                     <a class="button button-accent" href="{{ . }}" target="_blank">Visit</a>
                     {{ end }}
-    
+
                     {{ with .Params.source }}
                     <a class="button" href="{{ . }}" target="_blank">Source</a>
                     {{ end }}
@@ -33,9 +37,9 @@
                     <a class="button" href="{{ .RelPermalink }}">Learn More</a>
                 </div>
             </div>
-        </div>
-    </article>
-    {{ end }}
+        </article>
+        {{ end }}
 
+    </div>
 </main>
 {{ end }}

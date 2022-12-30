@@ -1,22 +1,24 @@
 {{ define "main" }}
 <main>
+    <div>
 
-    <h1>{{ .Title }}</h1>
+        <h1>{{ .Title }}</h1>
 
-    {{ .Content }}
+        {{ .Content }}
 
-    {{ range $page := .Pages }}
-    <article class="post-snippet">
-        <div href="{{ .Permalink }}" class="flex flex-col sm:flex-row mt-12 gap-4">
+        {{ range $page := .Pages }}
+        <article class="post-snippet">
+            <a href="{{ .Permalink }}">
 
-            <h1 class="mt-0">{{ .Title }}</h1>
+                <h1>{{ .Title }}</h1>
 
-            {{ with .Description }}
-            <p>{{ . }}</p>
-            {{ end }}
-        </div>
-    </article>
-    {{ end }}
+                {{ with .Description }}
+                <p>{{ . }}</p>
+                {{ end }}
+            </a>
+        </article>
+        {{ end }}
 
+    </div>
 </main>
 {{ end }}

@@ -246,7 +246,7 @@ header .button {
     margin: 0;
 }
 
-.profile img {
+.profile>img {
     width: 16rem;
     height: 16rem;
     object-fit: cover;
@@ -435,11 +435,11 @@ main .tile {
     text-decoration: none;
 }
 
-.button:has(svg) {
+.button:has(img) {
     padding: 0.6rem;
 }
 
-.button svg {
+.button img {
     display: block;
     width: 2rem;
     height: 2rem;

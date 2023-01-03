@@ -3,7 +3,7 @@ title: "Clocktower Notebook"
 image: "clocktower-icon.png"
 description: "A note-keeping tool for playing Blood on the Clocktower"
 link: "https://clocktower.trumankautzman.com/"
-source: "https://github.com/tilatrivia/clocktower"
+source: "https://github.com/tilatrivia/clocktower-notebook"
 ---
 
 The goal of Clocktower Notebook is to make note-taking while playing the game Blood on the Clocktower faster and more effective. If you want to learn more about what that entails, keep reading. If you want to see the app in action, go to [clocktower.trumank.dev](https://clocktower.trumank.dev/).

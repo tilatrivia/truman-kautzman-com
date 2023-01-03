@@ -2,7 +2,7 @@
 title: "Clocktower Notebook"
 image: "clocktower-icon.png"
 description: "A note-keeping tool for playing Blood on the Clocktower"
-link: "https://clocktower.trumankautzman.com/"
+link: "https://clocktower.trumank.dev/"
 source: "https://github.com/tilatrivia/clocktower-notebook"
 ---
 

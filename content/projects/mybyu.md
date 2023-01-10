@@ -2,7 +2,7 @@
 title: "My BYU"
 image: "mybyu.png"
 description: "Prototype unauthenticated home page for reaching various BYU services"
-link: "https://mybyu.trumankautzman.com/"
+link: "https://mybyu.trumank.dev/"
 source: "https://github.com/tilatrivia/mybyu"
 ---
 

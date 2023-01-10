@@ -1,4 +1,4 @@
-<div class="bg-primary">
+<!-- <div class="bg-primary">
     <div class="max-w-6xl m-auto px-2 py-4 flex flex-col sm:flex-row items-center">
         <a href="{{ .Site.BaseURL }}">
             <img src="/header-logo.png" class="h-16">
@@ -17,7 +17,18 @@
         </ul>
 
     </div>
-</div>
+</div> -->
+
+<header>
+    <a href="{{ .Site.BaseURL }}"><h1>Truman Kautzman</h1></a>
+    <ul class="buttons">
+        {{ range.Site.Menus.main }}
+        <li>
+            <a class="button" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</header>
 
 
 

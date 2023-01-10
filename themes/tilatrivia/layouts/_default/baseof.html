@@ -3,17 +3,11 @@
 {{- partial "head.html" . -}}
 
 <body>
-    <div>
-        <header>
-            {{- partial "header.html" . -}}
-        </header>
-        <div id="content" class="max-w-6xl w-full mx-auto mb-12 px-2">
-            {{- block "main" . }}{{- end }}
-        </div>
-        <footer>
-            {{- partial "footer.html" . -}}
-        </footer>
-    </div>
+    {{- partial "header.html" . -}}
+
+    {{- block "main" . }}{{- end }}
+
+    {{- partial "footer.html" . -}}
 </body>
 
 </html>

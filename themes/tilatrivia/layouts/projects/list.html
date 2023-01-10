@@ -1,31 +1,32 @@
 {{ define "main" }}
 <main>
+    <div>
+        <h1>{{ .Title }}</h1>
 
-    <h1>{{ .Title }}</h1>
+        {{ .Content }}
 
-    {{ .Content }}
-
-    {{ range $page := .Pages }}
-    <article class="post-snippet">
-        <div class="flex flex-col sm:flex-row mt-12 gap-4">
-            {{ with .Params.image }}
-            <a href="{{ $page.RelPermalink }}" class="bg-accent sm:w-64 h-48 flex-shrink-0">
-                <img src="./{{ . }}" class="w-full h-full object-cover">
+        {{ range $page := .Pages }}
+        <article class="tile tile-hover">
+            <a class="tile-logo" href="{{ $page.RelPermalink }}">
+                {{ with .Params.image }}
+                <img class="tile-image" src="./{{ . }}" />
+                {{ else }}
+                <img class="tile-icon" src="../nav-projects.svg">
+                {{ end }}
             </a>
-            {{ end }}
 
-            <div class="">
-                <h1 class="mt-0">{{ .Title }}</h1>
+            <div class="tile-content">
+                <h3>{{ .Title }}</h3>
 
                 {{ with .Description }}
                 <p>{{ . }}</p>
                 {{ end }}
 
-                <div class="flex flex-row gap-4 flex-wrap mt-2">
+                <div class="buttons">
                     {{ with .Params.link }}
                     <a class="button button-accent" href="{{ . }}" target="_blank">Visit</a>
                     {{ end }}
-    
+
                     {{ with .Params.source }}
                     <a class="button" href="{{ . }}" target="_blank">Source</a>
                     {{ end }}
@@ -33,9 +34,9 @@
                     <a class="button" href="{{ .RelPermalink }}">Learn More</a>
                 </div>
             </div>
-        </div>
-    </article>
-    {{ end }}
+        </article>
+        {{ end }}
 
+    </div>
 </main>
 {{ end }}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <line style="stroke-width: 6px; fill: none; stroke: rgb(30, 165, 30);" x1="35" y1="73" x2="65" y2="73"/>
+  <line style="stroke-width: 6px; fill: none; stroke: rgb(30, 165, 30);" x1="35" y1="85" x2="65" y2="85"/>
+  <line style="stroke-width: 6px; fill: none; stroke: rgb(30, 165, 30);" x1="40" y1="97" x2="60" y2="97"/>
+  <path d="M 50 3 C 36.745 3 26 13.745 26 27 C 26 36 29 40 32 44.6 C 35 49 38 55 38 64 M 50 3 C 63.255 3 74 13.745 74 27 C 74 36 71 40 68 44.6 C 65 49 62 55 62 64" style="stroke-width: 6px; fill: none; stroke: rgb(30, 165, 30);"/>
+  <polyline style="stroke-width: 6px; fill: none; stroke: rgb(30, 165, 30);" points="39.5 44.5 46.5 48.5 53.5 44.5 60.5 48.5" transform="matrix(0, -1, 1, 0, 3.5, 96.5)"/>
+</svg>

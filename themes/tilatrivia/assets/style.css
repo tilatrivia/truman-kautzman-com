@@ -1,52 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Lato:wght@400&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: Work Sans, sans-serif;
     margin: 0;
 
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+
+    --color-white: #ffffff;
     --color-off-white: #f2f2f2;
     --color-off-black: #202020;
-    --color-green: #1EA51E;
-    --color-blue: #0A4462;
+    --color-green: #1AC91A;
+    --color-light-green: #CCF5CC;
+    --color-blue: #154EA7;
 
-    --tk-white: #ffffff;
-    --tk-light: #f2f2f2;
-    --tk-dark: #202020;
-    --tk-green: #1EA51E;
-    --tk-blue: #0A4462;
+    --tk-header-bg: var(--color-green);
+    --tk-header-text: var(--color-off-white);
+    --tk-header-button: var(--color-blue);
 
-    --tk-header-bg: var(--tk-green);
-    --tk-header-text: var(--tk-light);
-    --tk-header-button: var(--tk-blue);
+    --tk-hero-bg: var(--color-light-green);
+    --tk-hero-text: var(--color-off-black);
+    --tk-hero-button: var(--color-green);
 
-    --tk-hero-bg: var(--tk-blue);
-    --tk-hero-text: var(--tk-light);
-    --tk-hero-button: var(--tk-green);
+    --tk-footer-bg: var(--color-blue);
+    --tk-footer-text: var(--color-off-white);
+    --tk-footer-link: var(--color-light-green);
+    --tk-footer-link-hover: var(--color-off-white);
 
-    --tk-footer-bg: var(--tk-blue);
-    --tk-footer-text: var(--tk-light);
-    --tk-footer-link: var(--tk-light);
-    --tk-footer-link-hover: var(--tk-light);
+    --tk-content-bg: var(--color-off-white);
+    --tk-content-text: var(--color-off-black);
 
-    --tk-content-bg: var(--tk-light);
-    --tk-content-text: var(--tk-dark);
+    --tk-link: var(--color-blue);
+    --tk-link-hover: var(--color-green);
 
-    --tk-link: var(--tk-blue);
-    --tk-link-hover: var(--tk-green);
+    --tk-tile-bg: var(--color-white);
+    --tk-tile-text: var(--color-off-black);
+    --tk-tile-icon-bg: var(--color-blue);
+    --tk-tile-icon-fill: var(--color-green);
 
-    --tk-tile-bg: var(--tk-white);
-    --tk-tile-text: var(--tk-dark);
-    --tk-tile-icon-bg: var(--tk-blue);
-    --tk-tile-icon-fill: var(--tk-green);
+    --tk-button: var(--color-blue);
+    --tk-button-accent: var(--color-green);
+    --tk-button-hover: var(--color-white);
 
-    --tk-button: var(--tk-blue);
-    --tk-button-accent: var(--tk-green);
-    --tk-button-hover: var(--tk-white);
-
-    --tk-layout-narrow-width: 32rem;
-    --tk-layout-med-width: 50rem;
-    --tk-layout-max-width: 64rem;
+    --tk-layout-max-width: 80rem;
 }
 
 body {
@@ -63,21 +59,25 @@ a:hover {
 }
 
 h1 {
+    font-family: Bitter, serif;
     font-size: 28pt;
     font-weight: 700;
 }
 
 h2 {
+    font-family: Bitter, serif;
     font-size: 24pt;
     font-weight: 700;
 }
 
 h3 {
+    font-family: Bitter, serif;
     font-size: 20pt;
     font-weight: 700;
 }
 
 h4 {
+    font-family: Bitter, serif;
     font-size: 18pt;
     font-weight: 700;
 }
@@ -106,18 +106,37 @@ ul {
 
 
 
+/* Contained Width */
+.container {
+    max-width: var(--tk-layout-max-width);
+    padding: 3rem 1rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 32rem) {
+    .container {
+        padding: 3rem 2rem;
+    }
+}
+
+
+
 /* Header */
 header {
     background-color: var(--tk-header-bg);
     color: var(--tk-header-text);
-    padding: 2rem 0.5rem;
+}
+
+header > .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
 }
 
-header>a {
+header a {
     display: block;
     color: var(--tk-header-text);
     text-decoration: none;
@@ -134,7 +153,7 @@ header li {
     list-style: none;
 }
 
-header>a:hover {
+header a:hover {
     color: var(--tk-header-text);
     text-decoration: none;
     text-shadow: 0 7px 8px rgba(0, 0, 0, 0.2);
@@ -150,9 +169,8 @@ header .button {
 }
 
 @media screen and (min-width: 32rem) {
-    header {
+    header > .container {
         width: initial;
-        padding: 2rem;
         gap: 1rem;
     }
 
@@ -162,7 +180,7 @@ header .button {
 }
 
 @media screen and (min-width: 50rem) {
-    header {
+    header > .container {
         align-items: center;
         flex-direction: row;
     }
@@ -172,9 +190,13 @@ header .button {
 
 /* Hero */
 .hero {
-    padding: 4rem 0.5rem;
     background-color: var(--tk-hero-bg);
     color: var(--tk-hero-text);
+}
+
+.hero > .container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .hero-image {
@@ -199,18 +221,7 @@ header .button {
     left: 0;
 }
 
-@media screen and (min-width: 32rem) {
-    .hero {
-        padding: 8rem 2rem;
-    }
-}
-
-.hero>div {
-    max-width: var(--tk-layout-max-width);
-    margin: 0 auto;
-}
-
-.hero-image>div>.tile {
+.hero-image .tile {
     position: relative;
     z-index: 10;
 }
@@ -264,20 +275,8 @@ main {
     box-shadow: inset rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
 }
 
-main>div {
-    margin: 0 auto;
-    max-width: calc(var(--tk-layout-max-width) + 4rem);
-    padding: 2rem 0.5rem 4rem;
-}
-
 main>div>*:first-child {
     margin-top: 0;
-}
-
-@media screen and (min-width: 32rem) {
-    main>div {
-        padding: 2rem 2rem 4rem;
-    }
 }
 
 main h1,
@@ -450,28 +449,18 @@ main .tile {
 
 /* Footer */
 footer {
-    padding: 4rem 0.5rem;
     background-color: var(--tk-footer-bg);
     color: var(--tk-footer-text);
 }
 
-@media screen and (min-width: 32rem) {
-    footer {
-        padding: 4rem 2rem;
-    }
-}
-
-footer>div {
-    max-width: var(--layout-max-width);
-    margin: 0 auto;
-
+footer > .container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 @media screen and (min-width: 32rem) {
-    footer>div {
+    footer > .container {
         flex-direction: row;
         gap: 0.5rem;
     }

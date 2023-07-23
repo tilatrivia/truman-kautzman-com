@@ -61,6 +61,10 @@
 
 body {
     margin: 0;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -338,6 +342,7 @@ header .button:hover {
 main {
     background-color: var(--tk-content-bg);
     color: var(--tk-content-text);
+    flex: 1;
 }
 
 main>div>*:first-child {
@@ -548,7 +553,7 @@ footer > .container {
 }
 
 footer>div>div {
-    flex: 100%;
+    flex: 1;
 }
 
 footer ul {

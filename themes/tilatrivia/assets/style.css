@@ -11,23 +11,34 @@
     --color-off-white: #f2f2f2;
     --color-off-black: #202020;
     --color-green: #1AC91A;
-    --color-light-green: #CCF5CC;
+    --color-green-light: #CCF5CC;
     --color-blue: #154EA7;
+    --color-blue-light: #aabbd7;
+
+    --filter-white: invert(100%);
+    --filter-off-white: invert(99%) sepia(77%) saturate(44%) hue-rotate(236deg) brightness(116%) contrast(90%);
+    --filter-off-black: invert(9%) sepia(0%) saturate(38%) hue-rotate(227deg) brightness(96%) contrast(91%);
+    --filter-green: invert(64%) sepia(79%) saturate(2474%) hue-rotate(74deg) brightness(93%) contrast(102%);
+    --filter-blue: invert(20%) sepia(99%) saturate(1747%) hue-rotate(206deg) brightness(89%) contrast(92%);
 
     --tk-header-bg: var(--color-green);
     --tk-header-text: var(--color-off-white);
     --tk-header-button: var(--color-blue);
 
-    --tk-hero-bg: var(--color-light-green);
-    --tk-hero-text: var(--color-off-black);
+    --tk-hero-bg: var(--color-blue);
+    --tk-hero-text: var(--color-off-white);
     --tk-hero-button: var(--color-green);
+
+    --tk-profile-text: var(--color-off-black);
+    --tk-profile-lines: var(--color-blue);
+    --tk-profile-buttons: var(--color-green);
 
     --tk-footer-bg: var(--color-blue);
     --tk-footer-text: var(--color-off-white);
-    --tk-footer-link: var(--color-light-green);
+    --tk-footer-link: var(--color-green-light);
     --tk-footer-link-hover: var(--color-off-white);
 
-    --tk-content-bg: var(--color-off-white);
+    --tk-content-bg: var(--color-white);
     --tk-content-text: var(--color-off-black);
 
     --tk-link: var(--color-blue);
@@ -43,6 +54,7 @@
     --tk-button-hover: var(--color-white);
 
     --tk-layout-max-width: 80rem;
+    --tk-layout-border-size: 5px;
 }
 
 body {
@@ -102,6 +114,24 @@ li {
 
 ul {
     padding: 0;
+}
+
+
+
+/* Line Under Heading */
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    display: block;
+    content: '';
+    width: 80%;
+    height: var(--tk-layout-border-size);
+    background: var(--color-blue);
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
 }
 
 
@@ -166,6 +196,12 @@ header .buttons {
 
 header .button {
     color: var(--tk-header-text);
+    border-color: var(--tk-header-button);
+}
+
+header .button:hover {
+    color: var(--tk-header-text);
+    background-color: var(--tk-header-button);
 }
 
 @media screen and (min-width: 32rem) {
@@ -226,10 +262,12 @@ header .button {
     z-index: 10;
 }
 
+
+/* Home Profile */
 .profile {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: stretch;
 }
 
 @media screen and (min-width: 46rem) {
@@ -238,32 +276,72 @@ header .button {
     }
 }
 
-.profile>div {
+.profile > div {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.profile-greeting {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 0.8;
+    margin: 0;
 }
 
 .profile-title {
+    font-family: Bitter, serif;
     font-weight: 900;
     font-size: 64px;
-    line-height: 0.9;
+    line-height: 1.2;
     margin: 0;
 }
 
 .profile-subtitle {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 36px;
+    line-height: 0.7;
     margin: 0;
 }
 
-.profile>img {
-    width: 16rem;
-    height: 16rem;
+.profile-image-container {
+    flex: 0.4;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: var(--tk-layout-border-size) solid var(--tk-profile-lines);
+}
+
+.profile-image-container > img {
+    width: 24rem;
+    height: 24rem;
     object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    flex: 0 0 16rem;
+}
+
+.profile-content-container {
+    flex: 0.6;
+}
+
+.profile-text-container {
+    padding-bottom: 1.5rem;
+}
+
+.profile-button-container {
+    display: flex;
+}
+
+.profile-button-container .buttons {
+    border-left: var(--tk-layout-border-size) solid var(--tk-profile-lines);
+    border-top: var(--tk-layout-border-size) solid var(--tk-profile-lines);
+    border-right: var(--tk-layout-border-size) solid var(--tk-profile-lines);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.profile-button-container span {
+    flex: 1;
+    border-bottom: var(--tk-layout-border-size) solid var(--tk-profile-lines);
+
 }
 
 
@@ -400,12 +478,12 @@ main .tile {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .button {
     display: block;
-    border: 3px solid var(--tk-button);
+    border: var(--tk-layout-border-size) solid var(--tk-button);
     color: var(--tk-button);
     fill: var(--tk-button);
     padding: 0.6rem 2rem;
@@ -415,6 +493,10 @@ main .tile {
     /*   text-align: center; */
 }
 
+.button img {
+    filter: var(--filter-blue);
+}
+
 .button:hover {
     background-color: var(--tk-button);
     color: var(--tk-button-hover);
@@ -422,10 +504,18 @@ main .tile {
     text-decoration: none;
 }
 
+.button:hover img {
+    filter: var(--filter-green);
+}
+
 .button-accent {
-    border: 3px solid var(--tk-button-accent);
+    border: var(--tk-layout-border-size) solid var(--tk-button-accent);
     color: var(--tk-button-accent);
     fill: var(--tk-button-accent);
+}
+
+.button-accent img {
+    filter: var(--filter-green);
 }
 
 .button-accent:hover {
@@ -433,6 +523,10 @@ main .tile {
     color: var(--tk-button-hover);
     fill: var(--tk-button-hover);
     text-decoration: none;
+}
+
+.button-accent:hover img {
+    filter: var(--filter-white);
 }
 
 .button:has(img) {

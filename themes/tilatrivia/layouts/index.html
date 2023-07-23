@@ -1,11 +1,11 @@
 {{ define "main" }}
 {{ $page := . }}
 <div class="hero">
-    <div class="container">
+    {{/*  <div class="container">
         <div class="profile">
             <img src="./truman-kautzman-headshot-square.jpg" />
             <div>
-                <h2 class="profile-title">Truman Kautzman</h2>
+                <h2 class="profile-title underline">Truman Kautzman</h2>
                 <h3 class="profile-subtitle">Software Engineer and Designer</h3>
                 <div class="buttons">
                     <a href="mailto:tilatrivia@gmail.com" target="_blank" class="button button-accent">
@@ -17,43 +17,39 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  */}}
 </div>
 
 <main>
     <div class="container">
-        <a class="tile tile-hover" href="/about">
-            <div class="tile-logo">
-                <img class="tile-icon" src="../nav-resume.svg">
+        <div class="profile">
+            <div class="profile-image-container">
+                <img src="./truman-kautzman.png" />
             </div>
+            <div class="profile-content-container">
+                <div class="profile-text-container">
+                    <p class="profile-greeting">Hello, I am</p>
+                    <p class="profile-title">Truman Kautzman</p>
+                    <p class="profile-subtitle">I Design and Build Software</p>
+                </div>
 
-            <div class="tile-content">
-                <h3>Resume</h3>
-                <p>Qualifications, Skills, Education and, Experience</p>
+                <div class="profile-button-container">
+                    <div class="buttons">
+                        <a href="mailto:tilatrivia@gmail.com" target="_blank" class="button button-accent">
+                            <img src="./social-email.svg" />
+                        </a>
+                        <a href="https://github.com/tilatrivia/" target="_blank" class="button button-accent">
+                            <img src="./social-github.svg" />
+                        </a>
+                        <a href="https://github.com/tilatrivia/" target="_blank" class="button button-accent">
+                            <img src="./social-github.svg" />
+                        </a>
+                    </div>
+                    <span></span>
+                </div>
             </div>
-        </a>
-
-        <a class="tile tile-hover" href="/projects">
-            <div class="tile-logo">
-                <img class="tile-icon" src="../nav-projects.svg">
-            </div>
-
-            <div class="tile-content">
-                <h3>Projects</h3>
-                <p>Learn About and Use Personal Projects of Mine</p>
-            </div>
-        </a>
-
-        <a class="tile tile-hover" href="/inspiration">
-            <div class="tile-logo">
-                <img class="tile-icon" src="../nav-inspiration.svg">
-            </div>
-
-            <div class="tile-content">
-                <h3>Inspiration</h3>
-                <p>A Collection of People, Designs, and Concepts that Inspire me</p>
-            </div>
-        </a>
+            
+        </div>
 
         {{ .Content }}
 

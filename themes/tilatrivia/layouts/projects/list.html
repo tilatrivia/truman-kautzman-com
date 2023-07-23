@@ -9,7 +9,7 @@
         <article class="tile tile-hover">
             <a class="tile-logo" href="{{ $page.RelPermalink }}">
                 {{ with .Params.image }}
-                <img class="tile-image" src="./{{ . }}" />
+                <img class="tile-image" src="{{ $page.RelPermalink }}/{{ . }}" />
                 {{ else }}
                 <img class="tile-icon" src="../nav-projects.svg">
                 {{ end }}

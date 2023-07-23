@@ -1,8 +1,9 @@
 ---
 title: "Liars Dice"
-image: "liars-dice.png"
+image: "thumbnail.png"
 description: "Online Liar's Dice board for playing liars dice remotely. Dice not included."
 source: "https://github.com/tilatrivia/liars-dice"
+weight: 40
 ---
 
 *Usable version Coming Soon! I have to migrate the Node.js backend.*

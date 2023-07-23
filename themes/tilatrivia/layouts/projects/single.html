@@ -2,13 +2,13 @@
 {{ $page := . }}
 
 
-<div {{ with .Params.image }} class="hero hero-image" style="background-image: url('../{{ . }}')" {{ else }}
+<div {{ with .Params.image }} class="hero hero-image" style="background-image: url('./{{ . }}')" {{ else }}
     class="hero" {{ end }}>
     <div class="container">
         <div class="tile">
             <a class="tile-logo">
                 {{ with .Params.image }}
-                <img class="tile-image" src="../{{ . }}" />
+                <img class="tile-image" src="./{{ . }}" />
                 {{ else }}
                 <img class="tile-icon" src="../../nav-projects.svg">
                 {{ end }}

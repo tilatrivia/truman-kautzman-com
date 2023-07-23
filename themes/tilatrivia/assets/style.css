@@ -23,22 +23,23 @@
 
     --tk-header-bg: var(--color-green);
     --tk-header-text: var(--color-off-white);
+    --tk-header-hover: var(--color-blue);
     --tk-header-button: var(--color-blue);
 
     --tk-hero-bg: var(--color-blue);
     --tk-hero-text: var(--color-off-white);
     --tk-hero-button: var(--color-green);
 
+    --tk-profile-bg: var(--color-green-light);
     --tk-profile-text: var(--color-off-black);
     --tk-profile-lines: var(--color-blue);
     --tk-profile-buttons: var(--color-green);
 
     --tk-footer-bg: var(--color-blue);
     --tk-footer-text: var(--color-off-white);
-    --tk-footer-link: var(--color-green-light);
-    --tk-footer-link-hover: var(--color-off-white);
+    --tk-footer-link-hover: var(--color-green);
 
-    --tk-content-bg: var(--color-white);
+    --tk-content-bg: var(--color-off-white);
     --tk-content-text: var(--color-off-black);
 
     --tk-link: var(--color-blue);
@@ -63,11 +64,12 @@ body {
 
 a {
     color: var(--tk-link);
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
     color: var(--tk-link-hover);
+    text-decoration: none;
 }
 
 h1 {
@@ -167,26 +169,29 @@ header > .container {
 }
 
 header a {
-    display: block;
-    color: var(--tk-header-text);
     text-decoration: none;
-    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
     font-weight: 900;
-    font-size: 46px;
+    font-size: 52px;
     line-height: 0.9;
+    color: var(--tk-header-text);
+    position: relative;
+}
+
+header a:hover h1::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: var(--tk-layout-border-size);
+    background-color: var(--tk-header-hover);
+    bottom: -0.5rem;
 }
 
 header li {
     list-style: none;
-}
-
-header a:hover {
-    color: var(--tk-header-text);
-    text-decoration: none;
-    text-shadow: 0 7px 8px rgba(0, 0, 0, 0.2);
 }
 
 header .buttons {
@@ -267,13 +272,24 @@ header .button:hover {
 .profile {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--tk-profile-bg);
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 52rem) {
     .profile {
         flex-direction: row;
+        padding: 4rem;
     }
+}
+
+.profile > img {
+    max-width: 24rem;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border: var(--tk-layout-border-size) solid var(--tk-profile-lines);
 }
 
 .profile > div {
@@ -282,66 +298,37 @@ header .button:hover {
     justify-content: flex-end;
 }
 
+.profile-text-container {
+    padding-bottom: 2rem;
+}
+
 .profile-greeting {
     font-weight: 500;
     font-size: 24px;
-    line-height: 0.8;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 .profile-title {
     font-family: Bitter, serif;
     font-weight: 900;
     font-size: 64px;
-    line-height: 1.2;
+    line-height: 0.9;
     margin: 0;
+    margin-bottom: 0.7rem;
+    position: relative;
+}
+
+.profile-title::before {
+    display: block;
+    content: '';
+    background-color: var(--color-blue-light);
 }
 
 .profile-subtitle {
     font-weight: 500;
     font-size: 36px;
-    line-height: 0.7;
     margin: 0;
-}
-
-.profile-image-container {
-    flex: 0.4;
-    display: flex;
-    align-items: flex-end;
-    border-bottom: var(--tk-layout-border-size) solid var(--tk-profile-lines);
-}
-
-.profile-image-container > img {
-    width: 24rem;
-    height: 24rem;
-    object-fit: cover;
-}
-
-.profile-content-container {
-    flex: 0.6;
-}
-
-.profile-text-container {
-    padding-bottom: 1.5rem;
-}
-
-.profile-button-container {
-    display: flex;
-}
-
-.profile-button-container .buttons {
-    border-left: var(--tk-layout-border-size) solid var(--tk-profile-lines);
-    border-top: var(--tk-layout-border-size) solid var(--tk-profile-lines);
-    border-right: var(--tk-layout-border-size) solid var(--tk-profile-lines);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-}
-
-.profile-button-container span {
-    flex: 1;
-    border-bottom: var(--tk-layout-border-size) solid var(--tk-profile-lines);
-
 }
 
 
@@ -350,7 +337,6 @@ header .button:hover {
 main {
     background-color: var(--tk-content-bg);
     color: var(--tk-content-text);
-    box-shadow: inset rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
 }
 
 main>div>*:first-child {

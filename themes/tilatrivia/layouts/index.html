@@ -1,55 +1,30 @@
 {{ define "main" }}
 {{ $page := . }}
-<div class="hero">
-    {{/*  <div class="container">
-        <div class="profile">
-            <img src="./truman-kautzman-headshot-square.jpg" />
-            <div>
-                <h2 class="profile-title underline">Truman Kautzman</h2>
-                <h3 class="profile-subtitle">Software Engineer and Designer</h3>
-                <div class="buttons">
-                    <a href="mailto:tilatrivia@gmail.com" target="_blank" class="button button-accent">
-                        <img src="./social-email.svg" />
-                    </a>
-                    <a href="https://github.com/tilatrivia/" target="_blank" class="button button-accent">
-                        <img src="./social-github.svg" />
-                    </a>
-                </div>
-            </div>
+<div class="profile">
+    <img src="./truman-kautzman.png" />
+    <div class="profile-content-container">
+        <div class="profile-text-container">
+            <p class="profile-greeting">Hello, I am</p>
+            <p class="profile-title">Truman Kautzman</p>
+            <p class="profile-subtitle">I design and build software.</p>
         </div>
-    </div>  */}}
+
+        <div class="buttons">
+            <a href="mailto:tilatrivia@gmail.com" target="_blank" class="button button-accent">
+                <img src="./social-email.svg" />
+            </a>
+            <a href="https://github.com/tilatrivia/" target="_blank" class="button button-accent">
+                <img src="./social-github.svg" />
+            </a>
+            <a href="https://github.com/tilatrivia/" target="_blank" class="button button-accent">
+                <img src="./social-github.svg" />
+            </a>
+        </div>
+    </div>
 </div>
 
 <main>
     <div class="container">
-        <div class="profile">
-            <div class="profile-image-container">
-                <img src="./truman-kautzman.png" />
-            </div>
-            <div class="profile-content-container">
-                <div class="profile-text-container">
-                    <p class="profile-greeting">Hello, I am</p>
-                    <p class="profile-title">Truman Kautzman</p>
-                    <p class="profile-subtitle">I Design and Build Software</p>
-                </div>
-
-                <div class="profile-button-container">
-                    <div class="buttons">
-                        <a href="mailto:tilatrivia@gmail.com" target="_blank" class="button button-accent">
-                            <img src="./social-email.svg" />
-                        </a>
-                        <a href="https://github.com/tilatrivia/" target="_blank" class="button button-accent">
-                            <img src="./social-github.svg" />
-                        </a>
-                        <a href="https://github.com/tilatrivia/" target="_blank" class="button button-accent">
-                            <img src="./social-github.svg" />
-                        </a>
-                    </div>
-                    <span></span>
-                </div>
-            </div>
-            
-        </div>
 
         {{ .Content }}
 

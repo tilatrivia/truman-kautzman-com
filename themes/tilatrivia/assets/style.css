@@ -8,18 +8,19 @@
     font-weight: 400;
 
     --color-white: #ffffff;
-    --color-off-white: #f2f2f2;
+    --color-off-white: #f7f7f7;
     --color-off-black: #202020;
-    --color-green: #1AC91A;
-    --color-green-light: #CCF5CC;
-    --color-blue: #154EA7;
-    --color-blue-light: #aabbd7;
+    --color-grey: #DEDEDE;
+    --color-green: #20B32C;
+    --color-green-light: #A6DEAA;
+    --color-blue: #0F49BD;
+    --color-blue-light: #A1BEF7;
 
     --filter-white: invert(100%);
     --filter-off-white: invert(99%) sepia(77%) saturate(44%) hue-rotate(236deg) brightness(116%) contrast(90%);
     --filter-off-black: invert(9%) sepia(0%) saturate(38%) hue-rotate(227deg) brightness(96%) contrast(91%);
-    --filter-green: invert(64%) sepia(79%) saturate(2474%) hue-rotate(74deg) brightness(93%) contrast(102%);
-    --filter-blue: invert(20%) sepia(99%) saturate(1747%) hue-rotate(206deg) brightness(89%) contrast(92%);
+    --filter-green: invert(68%) sepia(59%) saturate(6779%) hue-rotate(92deg) brightness(106%) contrast(75%);
+    --filter-blue: invert(12%) sepia(81%) saturate(6119%) hue-rotate(219deg) brightness(90%) contrast(88%);
 
     --tk-header-bg: var(--color-green);
     --tk-header-text: var(--color-off-white);

@@ -2,5 +2,10 @@
     {{ with .Get "title" }}
     <h3>{{ . }}</h3>
     {{ end }}
+
+    {{ with .Get "subtitle" }}
+    <h6 class="subtitle">{{ . }}</h6>
+    {{ end }}
+
     <p>{{ .Inner }}</p>
 </div>

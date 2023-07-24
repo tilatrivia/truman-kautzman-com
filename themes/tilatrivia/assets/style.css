@@ -10,7 +10,7 @@
     --color-white: #ffffff;
     --color-off-white: #f7f7f7;
     --color-off-black: #202020;
-    --color-gray: #DEDEDE;
+    --color-gray: #DBDBDB;
     --color-green: #20B32C;
     --color-green-light: #A6DEAA;
     --color-blue: #0F49BD;
@@ -54,6 +54,8 @@
     --tk-button: var(--color-blue);
     --tk-button-accent: var(--color-green);
     --tk-button-hover: var(--color-white);
+
+    --tk-list-bullet-color: var(--color-blue);
 
     --tk-layout-max-width: 80rem;
     --tk-layout-border-size: 5px;
@@ -116,7 +118,7 @@ a,
 li {
     font-size: 14pt;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 ul {
@@ -395,9 +397,16 @@ main .buttons {
     margin-bottom: 1rem;
 }
 
+.box h6 {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
 .box p {
     margin: 0;
 }
+
+
 
 .box-green {
     background-color: var(--color-green-light);
@@ -446,6 +455,26 @@ main .buttons {
     .columns-4 {
         grid-template-columns: repeat(4, calc(25% - 1.5rem));
     }
+}
+
+
+
+/* List */
+p.list-item {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.list-item::before {
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: var(--tk-list-bullet-color);
+    width: 0.5rem;
+    height: 0.5rem;
+    left: -1rem;
+    top: 0.5rem
 }
 
 

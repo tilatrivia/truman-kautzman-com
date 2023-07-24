@@ -50,13 +50,6 @@ Course work included web development, data structures, discrete math, computer s
 As my first real exposure to industry software production, I was exposed to large-scale software challenges and solutions, scalability and cost considerations, and Agile development practices. I also became familiar with working on a team to divide and conquer and deliver business value.I also wrote production React TypeScript components and Kotlin Micronaut endpoints.
 {{< /box >}}
 
-{{< box
-    title="Software Engineer"
-    subtitle="Velaflame Capstone Project - Provo, UT - August 2022 to April 2023"
-    class="box-gray"
->}}
-This opportunity was part of my degree program and provided a project that myself and four other students could focus on for several months. Half of the project involved writing C++ Arduino code to communicate with ESP Rainmaker, an IoT backend service from Espressif. The other half was building an app for iOS and Android, so naturally we chose to use Flutter. We were able to deliver business value.
-{{< /box >}}
 
 {{< box
     title="Lighting Technician"
@@ -64,6 +57,14 @@ This opportunity was part of my degree program and provided a project that mysel
     class="box-gray"
 >}}
 Here I gained and applied understanding of technical lighting equipment including professional lighting control and programming environments. I also worked closely with others to make decisions and accomplish tasks requiring organization of up to 100 lighting fixtures. I also contributed to high profile events such as BYU Devotionals and gained confidence under time and quality constraints.
+{{< /box >}}
+
+{{< box
+    title="Software Engineer"
+    subtitle="Velaflame Capstone Project - Provo, UT - August 2022 to April 2023"
+    class="box-gray"
+>}}
+This opportunity was part of my degree program and provided a project that myself and four other students could focus on for several months. Half of the project involved writing C++ Arduino code to communicate with ESP Rainmaker, an IoT backend service from Espressif. The other half was building an app for iOS and Android, so naturally we chose to use Flutter. We were able to deliver business value.
 {{< /box >}}
 
 {{< box 

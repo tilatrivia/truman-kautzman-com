@@ -1,7 +1,7 @@
 ---
 title: "Clocktower Notebook"
 image: "thumbnail.png"
-description: "A note-keeping tool for playing Blood on the Clocktower"
+description: "A note-keeping tool for playing Blood on the Clocktower, a social deduction party game."
 link: "https://clocktower.trumank.dev/"
 source: "https://github.com/tilatrivia/clocktower-notebook"
 weight: 30

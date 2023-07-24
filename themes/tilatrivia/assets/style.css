@@ -10,7 +10,7 @@
     --color-white: #ffffff;
     --color-off-white: #f7f7f7;
     --color-off-black: #202020;
-    --color-grey: #DEDEDE;
+    --color-gray: #DEDEDE;
     --color-green: #20B32C;
     --color-green-light: #A6DEAA;
     --color-blue: #0F49BD;
@@ -350,7 +350,11 @@ main>div>*:first-child {
 }
 
 main h1,
-main h2,
+main h2 {
+    margin-top: 4rem;
+}
+
+
 main h3,
 main h4,
 main h5,
@@ -372,6 +376,76 @@ main li {
 
 main .tile {
     margin-top: 2rem;
+}
+
+main .buttons {
+    margin-top: 1rem;
+}
+
+
+
+/* Box */
+.box {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.box h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.box p {
+    margin: 0;
+}
+
+.box-green {
+    background-color: var(--color-green-light);
+}
+
+.box-blue {
+    background-color: var(--color-blue-light);
+}
+
+.box-gray {
+    background-color: var(--color-gray);
+}
+
+
+
+/* Columns */
+.columns {
+    display: grid;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    grid-auto-rows: auto;
+}
+
+.columns > div {
+    margin: 0;
+}
+
+.columns-2, .columns-3, .columns-4 {
+    grid-template-columns: 100%;
+}
+
+@media screen and (min-width: 40rem) {
+    .columns-2, .columns-4 {
+        grid-template-columns: repeat(2, calc(50% - 1rem));
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .columns-3 {
+        grid-template-columns: repeat(3, calc(33.3333% - 1.3333rem));
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .columns-4 {
+        grid-template-columns: repeat(4, calc(25% - 1.5rem));
+    }
 }
 
 

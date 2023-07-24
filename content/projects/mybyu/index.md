@@ -1,7 +1,7 @@
 ---
 title: "My BYU"
 image: "thumbnail.png"
-description: "Prototype unauthenticated home page for reaching various BYU services"
+description: "Built as a class prototype, this is an unauthenticated home page for reaching various BYU services."
 link: "https://mybyu.trumank.dev/"
 source: "https://github.com/tilatrivia/mybyu"
 weight: 20

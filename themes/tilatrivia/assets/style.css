@@ -54,7 +54,7 @@
     --tk-tile-icon-fill: var(--color-green);
 
     --tk-project-tile-bg: var(--color-gray-light);
-    --tk-project-tile-lines: var(--color-blue);
+    --tk-project-tile-lines: var(--color-gray);
 
     --tk-button: var(--color-blue);
     --tk-button-accent: var(--color-green);
@@ -243,14 +243,11 @@ header .button:hover {
 
 
 /* Hero */
-.hero {
-    background-color: var(--tk-hero-bg);
-    color: var(--tk-hero-text);
-}
 
 .hero > .container {
     padding-top: 8rem;
     padding-bottom: 8rem;
+    max-width: 36rem;
 }
 
 .hero-image {
@@ -275,10 +272,15 @@ header .button:hover {
     left: 0;
 }
 
-.hero-image .tile {
+.hero-image > div {
     position: relative;
     z-index: 10;
 }
+
+.hero .box {
+    border: var(--tk-layout-border-size) solid var(--tk-project-tile-lines);
+}
+
 
 
 /* Home Profile */
@@ -398,21 +400,27 @@ main .buttons {
     margin: 2rem 0;
 }
 
-.box h3 {
-    margin: 0;
-    margin-bottom: 1rem;
+.box :first-child {
+    margin-top: 0;
 }
 
-.box h6 {
+.box h2,
+.box h3,
+.box h4,
+.box h5,
+.box h6,
+.box p,
+.box .buttons {
     margin: 0;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.box p {
-    margin: 0;
+.box-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-
-
 
 .box-green {
     background-color: var(--color-green-light);

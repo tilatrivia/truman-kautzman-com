@@ -1,7 +1,7 @@
 ---
 title: "My BYU"
 image: "thumbnail.png"
-description: "Built as a class prototype, this is an unauthenticated home page for reaching various BYU services."
+description: "Built to explore solutions to BYU's existing website, this simplifies finding BYU services."
 link: "https://mybyu.trumank.dev/"
 source: "https://github.com/tilatrivia/mybyu"
 weight: 20
@@ -9,7 +9,7 @@ weight: 20
 
 ## Description
 
-BYU's set of websites and services is vast and complex. BYU offers an authenticated home page for its students and staff, albeit an old one. This prototype focused on two features, pinning and search, that would make the service as a whole more useful. Try out the prototype at [mybyu.trumankautzman.com](http://mybyu.trumankautzman.com/)
+BYU's set of websites and services is vast and complex. BYU offers an authenticated home page for its students and staff, but it is old and disorderly. This prototype focused on two features, pinning and search, that would make the service as a whole more useful. Try out the prototype at [mybyu.trumankautzman.com](http://mybyu.trumankautzman.com/)
 
 ## Conception
 As part of a user experience class I was taking at BYU, we were tasked with designing, developing, and implementing an alternative to BYU's current logged-in landing page, MyBYU. I personally think this is a great project as the current MyBYU, which fits the largely outdated paradigm of a personal home page, needs some work.

@@ -1,0 +1,16 @@
+{
+  "name": "tilatrivia-hugo-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "tw:watch": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css --watch",
+    "tw:build": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

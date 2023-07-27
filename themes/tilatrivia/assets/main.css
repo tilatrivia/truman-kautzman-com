@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Lato&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-dark
+    }
+    
+    h1 {
+        @apply font-serif font-bold text-[28pt]
+    }
+    
+    h2 {
+        @apply font-serif font-bold text-[24pt]
+    }
+    
+    h3 {
+        @apply font-serif font-bold text-[20pt]
+    }
+    
+    h4 {
+        @apply font-serif font-bold text-[18pt]
+    }
+    
+    h5 {
+        @apply font-bold text-[16pt]
+    }
+    
+    h6 {
+        @apply font-bold text-[14pt]
+    }
+    
+    p,
+    a,
+    li {
+        @apply font-medium text-[14pt]
+    }
+    
+    a {
+        @apply text-blue
+    }
+    
+    a:hover {
+        @apply text-green
+    }
+}
+
+
+
+/* Filters */
+.filter-white {
+    filter: invert(100%);
+}
+
+.filter-light {
+    filter: invert(99%) sepia(77%) saturate(44%) hue-rotate(236deg) brightness(116%) contrast(90%);
+}
+
+.filter-dark {
+    filter: invert(9%) sepia(0%) saturate(38%) hue-rotate(227deg) brightness(96%) contrast(91%);
+}
+
+.filter-green {
+    filter: invert(68%) sepia(59%) saturate(6779%) hue-rotate(92deg) brightness(106%) contrast(75%);
+}
+
+.filter-blue {
+    filter: invert(12%) sepia(81%) saturate(6119%) hue-rotate(219deg) brightness(90%) contrast(88%);
+}
+
+.filter-gray {
+    filter: invert(35%) sepia(0%) saturate(1746%) hue-rotate(193deg) brightness(93%) contrast(81%);
+}
+
+
+
+
+
+
+
+@layer components {
+    /* TK Border */
+    .tk-border {
+        @apply border-solid border-[5px]
+    }
+
+
+    /* TK Container */
+    .tk-container {
+        @apply max-w-screen-xl my-0 mx-auto py-12 px-4
+    }
+
+    
+
+    /* TK Button */
+    .tk-buttons {
+        @apply flex flex-row flex-wrap gap-4
+    }
+    
+    .tk-button {
+        @apply block tk-border py-2.5 px-8 font-bold
+    }
+
+    .tk-button img {
+        @apply h-8
+    }
+
+    .tk-button:has(img) {
+        @apply p-2.5
+    }
+    
+    /* Green */
+    .tk-button-green {
+        @apply text-green border-green
+    }
+    
+    .tk-button-green img {
+        @apply filter-green
+    }
+    
+    .tk-button-green:hover {
+        @apply bg-green text-light
+    }
+    
+    .tk-button-green:hover img {
+        @apply filter-white
+    }
+    
+    /* Blue */
+    .tk-button-blue {
+        @apply text-blue border-blue
+    }
+    
+    .tk-button-blue img {
+        @apply filter-blue
+    }
+    
+    .tk-button-blue:hover {
+        @apply bg-blue text-light
+    }
+    
+    .tk-button-blue:hover img {
+        @apply filter-white
+    }
+    
+    /* Gray */
+    .tk-button-gray {
+        @apply text-gray border-gray
+    }
+    
+    .tk-button-gray img {
+        @apply filter-gray
+    }
+    
+    .tk-button-gray:hover {
+        @apply bg-gray text-light
+    }
+    
+    .tk-button-gray:hover img {
+        @apply filter-white
+    }
+}

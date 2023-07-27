@@ -1,22 +1,20 @@
 {{ define "main" }}
 {{ $page := . }}
-<div class="profile">
-    <img src="./truman-kautzman.png" />
-    <div class="profile-content-container">
-        <div class="profile-text-container">
-            <p class="profile-greeting">Hello, I am</p>
-            <p class="profile-title">Truman Kautzman</p>
-            <p class="profile-subtitle">I design and build software.</p>
-        </div>
+<div class="bg-green-light flex flex-col md:flex-row content-center p-8 gap-8 md:p-16">
+    <img class="max-w-sm object-cover aspect-square tk-border border-blue" src="./truman-kautzman.png" />
+    <div class="flex flex-col justify-end">
+        <p class="text-[20pt] leading-none">Hello, I am</p>
+        <p class="font-serif font-black text-[48pt] leading-none mt-3">Truman Kautzman</p>
+        <p class="text-[28pt] leading-none mt-2">I design and build software.</p>
 
-        <div class="buttons">
-            <a href="mailto:tilatrivia@gmail.com" target="_blank" class="button button-accent">
+        <div class="tk-buttons mt-8">
+            <a href="mailto:tilatrivia@gmail.com" target="_blank" class="tk-button tk-button-green">
                 <img src="./social-email.svg" />
             </a>
-            <a href="https://www.linkedin.com/in/truman-kautzman/" target="_blank" class="button button-accent">
+            <a href="https://www.linkedin.com/in/truman-kautzman/" target="_blank" class="tk-button tk-button-green">
                 <img src="./social-linkedin.svg" />
             </a>
-            <a href="https://github.com/tilatrivia/" target="_blank" class="button button-accent">
+            <a href="https://github.com/tilatrivia/" target="_blank" class="tk-button tk-button-green">
                 <img src="./social-github.svg" />
             </a>
         </div>
@@ -24,7 +22,7 @@
 </div>
 
 <main>
-    <div class="container">
+    <div class="tk-container">
 
         {{ .Content }}
 

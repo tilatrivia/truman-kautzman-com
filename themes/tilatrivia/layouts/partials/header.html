@@ -1,9 +1,9 @@
 <header class="bg-green">
     <div class="tk-container py-8 flex flex-col md:flex-row justify-between gap-4">
-        <a class="text-light hover:text-blue" href="{{ .Site.BaseURL }}"><h1>Truman Kautzman</h1></a>
-        <ul class="flex flex-col md:flex-row gap-4">
+        <a class="text-light hover:text-light hover:tk-underline" href="{{ .Site.BaseURL }}"><h1>Truman Kautzman</h1></a>
+        <ul class="tk-buttons">
             {{ range.Site.Menus.main }}
-            <li class="">
+            <li>
                 <a class="tk-button tk-button-blue text-light" href="{{ .URL }}">{{ .Name }}</a>
             </li>
             {{ end }}

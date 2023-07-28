@@ -4,22 +4,20 @@
 
 <div
     {{ with .Params.image }}
-    class="hero hero-image" style="background-image: url('./{{ . }}')"
-    {{ else }}
-    class="hero"
+    class="tk-hero-image" style="background-image: url('./{{ . }}')"
     {{ end }}
 >
-    <div class="container">
-        <div class="box box-gray box-center">
+    <div class="max-w-screen-xl my-0 mx-auto py-32 px-4 relative z-10">
+        <div class="bg-gray-light tk-border border-gray p-8">
             <h1>{{ .Title }}</h1>
             <p>{{ .Description }}</p>
-            <div class="buttons">
+            <div class="tk-buttons mt-4">
                 {{ with .Params.link }}
-                <a class="button button-accent" href="{{ . }}">Visit</a>
+                <a class="tk-button tk-button-green" href="{{ . }}">Visit</a>
                 {{ end }}
 
                 {{ with .Params.source }}
-                <a class="button" href="{{ . }}">Source</a>
+                <a class="tk-button tk-button-blue" href="{{ . }}">Source</a>
                 {{ end }}
             </div>
         </div>
@@ -27,7 +25,7 @@
 </div>
 
 <main>
-    <div class="container">
+    <div class="tk-container">
         {{ .Content }}
     </div>
 </main>

@@ -1,11 +1,11 @@
 {{ define "main" }}
 <main>
-    <div class="container">
+    <div class="tk-container">
         <h1>{{ .Title }}</h1>
 
         {{ .Content }}
 
-        <div class="project-tiles">
+        <div class="flex flex-col gap-8 mt-4">
             {{ range $page := .Pages }}
             <article>
                 {{- partial "project-tile.html" $page -}}

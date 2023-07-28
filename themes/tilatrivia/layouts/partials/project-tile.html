@@ -1,20 +1,18 @@
-<div class="project-tile">
-    <div class="project-tile-image">
-        <img src="{{ .RelPermalink }}/{{ .Params.image }}" href="{{ .RelPermalink }}" />
-    </div>
-    <div class="project-tile-content">
+<div class="bg-gray-light flex flex-col md:flex-row">
+    <img class="w-full h-64 md:w-64 md:h-auto object-cover" src="{{ .RelPermalink }}/{{ .Params.image }}" href="{{ .RelPermalink }}" />
+    <div class="p-8 flex flex-col justify-center">
         <h2>{{ .Title }}</h2>
         <p>{{ .Description }}</p>
-        <div class="buttons">
+        <div class="tk-buttons">
             {{ with .Params.link }}
-            <a class="button button-accent" href="{{ . }}">Visit</a>
+            <a class="tk-button tk-button-green" href="{{ . }}">Visit</a>
             {{ end }}
             
             {{ with .Params.source }}
-            <a class="button" href="{{ . }}">Source</a>
+            <a class="tk-button tk-button-blue" href="{{ . }}">Source</a>
             {{ end }}
 
-            <a class="button" href="{{ .RelPermalink }}">Learn More</a>
+            <a class="tk-button tk-button-blue" href="{{ .RelPermalink }}">Learn More</a>
         </div>
     </div>
 </div>

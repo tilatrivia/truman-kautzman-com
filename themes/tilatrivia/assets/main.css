@@ -5,7 +5,11 @@
 
 @layer base {
     body {
-        @apply text-dark
+        @apply text-dark flex flex-col min-h-screen
+    }
+
+    main {
+        @apply flex-grow
     }
     
     h1 {
@@ -44,6 +48,38 @@
     
     a:hover {
         @apply text-green
+    }
+
+    main h1 {
+        @apply mt-16
+    }
+
+    main h2 {
+        @apply mt-12
+    }
+
+    main h3,
+    main h4 {
+        @apply mt-8
+    }
+
+    main h5,
+    main h6 {
+        @apply mt-4
+    }
+
+    main p {
+        @apply mt-2
+    }
+
+    main h1:first-child,
+    main h2:first-child,
+    main h3:first-child,
+    main h4:first-child,
+    main h5:first-child,
+    main h6:first-child,
+    main p:first-child {
+        @apply m-0
     }
 }
 
@@ -87,20 +123,73 @@
     }
 
 
+    /* TK Underline */
+    .tk-underline {
+        @apply relative;
+    }
+
+    .tk-underline:after {
+        @apply block bg-blue absolute w-full h-[5px] top-12;
+        content: '';
+    }
+
+    .hover\:tk-underline:hover {
+        @apply tk-underline
+    }
+
+
+    /* TK List Item */
+    .tk-list-item {
+        @apply ml-4 relative
+    }
+
+    .tk-list-item::before {
+        @apply block bg-blue absolute w-2 h-2 -left-4 top-3;
+        content: '';
+    }
+
+
     /* TK Container */
     .tk-container {
         @apply max-w-screen-xl my-0 mx-auto py-12 px-4
     }
 
+
+    /* TK Hero Image */
+    .tk-hero-image {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .tk-hero-image::after {
+        -webkit-backdrop-filter: blur(15px);
+        /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+        backdrop-filter: blur(15px);
+        /* Supported in Chrome 76 */
+    
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
     
 
     /* TK Button */
     .tk-buttons {
         @apply flex flex-row flex-wrap gap-4
     }
+
+    main .tk-buttons {
+        @apply mt-4
+    }
     
     .tk-button {
-        @apply block tk-border py-2.5 px-8 font-bold
+        @apply block tk-border py-2.5 px-8 font-bold m-0
     }
 
     .tk-button img {

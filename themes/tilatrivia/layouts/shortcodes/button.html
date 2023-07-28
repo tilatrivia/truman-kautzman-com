@@ -1,1 +1,3 @@
-<a class='button {{ with .Get "class" }}{{ . }}{{ end }}' href='{{ with .Get "link" }}{{ . }}{{ end }}'>{{ with .Get "label" }}{{ . }}{{ end }}</a>
+<a class='tk-button {{ with .Get "class" }}{{ . }}{{ end }}' href='{{ with .Get "link" }}{{ . }}{{ end }}'>
+    {{ .Get "label" }}
+</a>

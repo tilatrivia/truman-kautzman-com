@@ -4,12 +4,29 @@ title: "Inspiration"
 
 Here is a collection of some things that I like, relate to, and take inspiration from and why.
 
+
+
+## Tantacrul
+
+Tantacrul, also know as Martin Keary, is a Youtuber who focuses on design, music, software, and music software. He caught my attention because he touches on multiple interests of mine at once. His insights about music notation software as a professional software designer and composer are very well informed and his presentation style is captivating, even if you don't really care about notation software. I of course do care bu-Sibelius crashed. As of recently, he designs a wonderful free music notation software called MuseScore.
+
+{{< box title="More From Tantacrul" class="bg-blue-light mt-4" >}}
+    {{< buttons >}}
+        {{< button label="Youtube Channel" link="https://www.youtube.com/c/Tantacrul" class="tk-button-blue" >}}
+        {{< button label="MuseScore" link="https://musescore.org/" class="tk-button-blue" >}}
+        {{< button label="Martin Keary" link="https://www.martinkeary.com/" class="tk-button-blue" >}}
+    {{< /buttons >}}
+{{< /box >}}
+
+
+
 ## Mary Blair
-![Mary Blair olive and blue facade](./mary-blair.jpg)
 
-Influential modernist artist who worked directly with Walt Disney to give his films and theme parks attractions incredible visuals. I find the bold use of color and shape to be iconic and fit my tastes. Perhaps this site uses some of those ideas. [Learn more about Mary Blair](https://magicofmaryblair.com/mary-blair-gallery/).
+Mary Blair was an influential modernist artist who worked directly with Walt Disney to give his films and theme park attractions incredible visuals. Think "Its a Small World," that's her visual style. Modernist art has unfortunately been often resigned to children's content. I think it is the fun side of the otherwise stoic mid-century modern style. I find her bold use of color and shape to be creative and interesting. Perhaps this site uses some of those ideas. Learn more about Mary Blare [here](https://magicofmaryblair.com/mary-blair-gallery/).
 
-## Tantacrule
-![Tantacrule janky thumbnail](./tantacrule-janky.jpg)
-
-Tantacrule or Martin Keary, is a Youtuber who focuses on music, software, and music software. This intersection is right up my alley and I really admire the insights he has, as well as his presentation style. He also designs a wonderful free music notation software called [MuseScore](https://musescore.org/). Check out his [Youtube channel](https://www.youtube.com/c/Tantacrul) or his [website](https://www.martinkeary.com/).
+{{< box title="More About Mary Blair" class="bg-blue-light mt-4" >}}
+    {{< buttons >}}
+        {{< button label="Gallery" link="https://magicofmaryblair.com/mary-blair-gallery/" class="tk-button-blue" >}}
+        {{< button label="Wikipedia" link="https://en.wikipedia.org/wiki/Mary_Blair" class="tk-button-blue" >}}
+    {{< /buttons >}}
+{{< /box >}}

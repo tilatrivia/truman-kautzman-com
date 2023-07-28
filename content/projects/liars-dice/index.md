@@ -6,8 +6,8 @@ source: "https://github.com/tilatrivia/liars-dice"
 weight: 40
 ---
 
-{{< box class="box-blue" >}}
-Usable version coming soon! I hope to migrate my Node.js instance.
+{{< box title="Usable Version Comming Soon!" class="bg-blue-light" >}}
+I hope to migrate my Node.js instance.
 {{< /box >}}
 
 A digital alterative to the liars dice game board that allows for playing with people over the internet. This is not a full implementation of the game, just the board, under the assumption that you are playing over the phone.

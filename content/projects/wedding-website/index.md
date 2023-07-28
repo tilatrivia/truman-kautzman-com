@@ -8,7 +8,7 @@ weight: 10
 
 ## Description
 
-As many engaged couples do, my finace and I created a website to place information about our upcoming wedding. The primary purpose for the site is to publish details about our receptions and link to our regitries. There is also a photo gallery with photos from while we were dating.
+As many engaged couples do, my finace and I created a website to place information about our upcoming wedding. The primary purpose for the site is to publish details about our receptions and link to our registries. There is also a photo gallery with photos from while we were dating.
 
 ## Conception
 

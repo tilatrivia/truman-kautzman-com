@@ -3,7 +3,6 @@ title: "Wedding Website"
 image: "thumbnail.png"
 description: "A fully custom website built for my wedding with several hand-made vector assets."
 link: "https://trumanandjessica.com/"
-source: "https://github.com/tilatrivia/truman-and-jessica-com"
 weight: 10
 ---
 

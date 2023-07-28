@@ -640,21 +640,6 @@ main h1:first-child,
 
 /* TK Underline */
 
-.tk-underline{
-  position: relative;
-}
-
-.tk-underline:after{
-  position: absolute;
-  top: 3rem;
-  display: block;
-  height: 5px;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 73 189 / var(--tw-bg-opacity));
-  content: '';
-}
-
 /* TK List Item */
 
 .tk-list-item{
@@ -1055,11 +1040,6 @@ main .tk-buttons{
 .hover\:bg-green-light:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(166 222 170 / var(--tw-bg-opacity));
-}
-
-.hover\:text-blue:hover{
-  --tw-text-opacity: 1;
-  color: rgb(15 73 189 / var(--tw-text-opacity));
 }
 
 .hover\:text-light:hover{

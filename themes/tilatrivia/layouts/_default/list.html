@@ -1,16 +1,16 @@
 {{ define "main" }}
 <main>
-    <div>
+    <div class="tk-container">
 
         <h1>{{ .Title }}</h1>
 
         {{ .Content }}
 
         {{ range $page := .Pages }}
-        <article class="post-snippet">
-            <a href="{{ .Permalink }}">
+        <article class="flex flex-col gap-8">
+            <a class="p-8 bg-gray-light hover:bg-green-light" href="{{ .Permalink }}">
 
-                <h1>{{ .Title }}</h1>
+                <h2>{{ .Title }}</h2>
 
                 {{ with .Description }}
                 <p>{{ . }}</p>

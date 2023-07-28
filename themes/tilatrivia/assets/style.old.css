@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+
+    --color-white: #ffffff;
+    --color-off-white: #f7f7f7;
+    --color-off-black: #202020;
+    --color-gray: #5c5c5c;
+    --color-gray-light: #DBDBDB;
+    --color-green: #20B32C;
+    --color-green-light: #A6DEAA;
+    --color-blue: #0F49BD;
+    --color-blue-light: #A1BEF7;
+
+    --filter-white: invert(100%);
+    --filter-off-white: invert(99%) sepia(77%) saturate(44%) hue-rotate(236deg) brightness(116%) contrast(90%);
+    --filter-off-black: invert(9%) sepia(0%) saturate(38%) hue-rotate(227deg) brightness(96%) contrast(91%);
+    --filter-green: invert(68%) sepia(59%) saturate(6779%) hue-rotate(92deg) brightness(106%) contrast(75%);
+    --filter-blue: invert(12%) sepia(81%) saturate(6119%) hue-rotate(219deg) brightness(90%) contrast(88%);
+    --filter-gray: invert(35%) sepia(0%) saturate(1746%) hue-rotate(193deg) brightness(93%) contrast(81%);
+
+    --tk-header-bg: var(--color-green);
+    --tk-header-text: var(--color-off-white);
+    --tk-header-hover: var(--color-blue);
+    --tk-header-button: var(--color-blue);
+
+    --tk-hero-bg: var(--color-green-light);
+    --tk-hero-text: var(--color-off-white);
+    --tk-hero-button: var(--color-green);
+
+    --tk-profile-bg: var(--color-green-light);
+    --tk-profile-text: var(--color-off-black);
+    --tk-profile-lines: var(--color-blue);
+    --tk-profile-buttons: var(--color-green);
+
+    --tk-footer-bg: var(--color-blue);
+    --tk-footer-text: var(--color-off-white);
+    --tk-footer-link-hover: var(--color-green);
+
+    --tk-content-bg: var(--color-off-white);
+    --tk-content-text: var(--color-off-black);
+
+    --tk-link: var(--color-blue);
+    --tk-link-hover: var(--color-green);
+
+    --tk-tile-bg: var(--color-white);
+    --tk-tile-text: var(--color-off-black);
+    --tk-tile-icon-bg: var(--color-blue);
+    --tk-tile-icon-fill: var(--color-green);
+
+    --tk-project-tile-bg: var(--color-gray-light);
+    --tk-project-tile-lines: var(--color-gray);
+
+    --tk-button: var(--color-blue);
+    --tk-button-accent: var(--color-green);
+    --tk-button-neutral: var(--color-gray);
+    --tk-button-hover: var(--color-white);
+
+    --tk-list-bullet-color: var(--color-blue);
+
+    --tk-layout-max-width: 80rem;
+    --tk-layout-border-size: 5px;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: var(--tk-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--tk-link-hover);
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Bitter, serif;
+    font-size: 28pt;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: Bitter, serif;
+    font-size: 24pt;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: Bitter, serif;
+    font-size: 20pt;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: Bitter, serif;
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 14pt;
+    font-weight: 700;
+}
+
+p,
+a,
+li {
+    font-size: 14pt;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+ul {
+    padding: 0;
+}
+
+
+
+/* Line Under Heading */
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    display: block;
+    content: '';
+    width: 80%;
+    height: var(--tk-layout-border-size);
+    background: var(--color-blue);
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+}
+
+
+
+/* Contained Width */
+.container {
+    max-width: var(--tk-layout-max-width);
+    padding: 3rem 1rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 32rem) {
+    .container {
+        padding: 3rem 2rem;
+    }
+}
+
+
+
+/* Header */
+header {
+    background-color: var(--tk-header-bg);
+    color: var(--tk-header-text);
+}
+
+header > .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 0.9;
+    color: var(--tk-header-text);
+    position: relative;
+}
+
+header a:hover h1::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: var(--tk-layout-border-size);
+    background-color: var(--tk-header-hover);
+    bottom: -0.5rem;
+}
+
+header li {
+    list-style: none;
+}
+
+header .buttons {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+header .button {
+    color: var(--tk-header-text);
+    border-color: var(--tk-header-button);
+}
+
+header .button:hover {
+    color: var(--tk-header-text);
+    background-color: var(--tk-header-button);
+}
+
+@media screen and (min-width: 32rem) {
+    header > .container {
+        width: initial;
+        gap: 1rem;
+    }
+
+    header .buttons {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 50rem) {
+    header > .container {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+
+
+/* Hero */
+
+.hero > .container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    max-width: 36rem;
+}
+
+.hero-image {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image::after {
+    -webkit-backdrop-filter: blur(10px) brightness(100%) contrast(70%);
+    /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+    backdrop-filter: blur(10px) brightness(100%) contrast(70%);
+    /* Supported in Chrome 76 */
+
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.hero-image > div {
+    position: relative;
+    z-index: 10;
+}
+
+.hero .box {
+    border: var(--tk-layout-border-size) solid var(--tk-project-tile-lines);
+}
+
+
+
+/* Home Profile */
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--tk-profile-bg);
+}
+
+@media screen and (min-width: 52rem) {
+    .profile {
+        flex-direction: row;
+        padding: 4rem;
+    }
+}
+
+.profile > img {
+    max-width: 24rem;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border: var(--tk-layout-border-size) solid var(--tk-profile-lines);
+}
+
+.profile > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.profile-text-container {
+    padding-bottom: 2rem;
+}
+
+.profile-greeting {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.profile-title {
+    font-family: Bitter, serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 0.9;
+    margin: 0;
+    margin-bottom: 0.7rem;
+    position: relative;
+}
+
+.profile-title::before {
+    display: block;
+    content: '';
+    background-color: var(--color-blue-light);
+}
+
+.profile-subtitle {
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+}
+
+
+
+/* Content */
+main {
+    background-color: var(--tk-content-bg);
+    color: var(--tk-content-text);
+    flex: 1;
+}
+
+main>div>*:first-child {
+    margin-top: 0;
+}
+
+main h1,
+main h2 {
+    margin-top: 4rem;
+}
+
+
+main h3,
+main h4,
+main h5,
+main h6 {
+    margin-top: 2rem;
+}
+
+main p {
+    margin-top: 0.5rem;
+}
+
+main ul {
+    padding-inline-start: 2rem;
+}
+
+main li {
+    margin-top: 0.3rem;
+}
+
+main .tile {
+    margin-top: 2rem;
+}
+
+main .buttons {
+    margin-top: 1rem;
+}
+
+
+
+/* Box */
+.box {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.box :first-child {
+    margin-top: 0;
+}
+
+.box h2,
+.box h3,
+.box h4,
+.box h5,
+.box h6,
+.box p,
+.box .buttons {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.box-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box-green {
+    background-color: var(--color-green-light);
+}
+
+.box-blue {
+    background-color: var(--color-blue-light);
+}
+
+.box-gray {
+    background-color: var(--color-gray-light);
+}
+
+
+
+/* Columns */
+.columns {
+    display: grid;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    grid-auto-rows: auto;
+}
+
+.columns > div {
+    margin: 0;
+}
+
+.columns-2, .columns-3, .columns-4 {
+    grid-template-columns: 100%;
+}
+
+@media screen and (min-width: 40rem) {
+    .columns-2, .columns-4 {
+        grid-template-columns: repeat(2, calc(50% - 1rem));
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .columns-3 {
+        grid-template-columns: repeat(3, calc(33.3333% - 1.3333rem));
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .columns-4 {
+        grid-template-columns: repeat(4, calc(25% - 1.5rem));
+    }
+}
+
+
+
+/* List */
+p.list-item {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.list-item::before {
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: var(--tk-list-bullet-color);
+    width: 0.5rem;
+    height: 0.5rem;
+    left: -1rem;
+    top: 0.5rem
+}
+
+
+
+/* Tile */
+.tile {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.tile {
+    background-color: var(--tk-tile-bg);
+    color: var(--tk-tile-text);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+@media screen and (min-width: 32rem) {
+    .tile {
+        flex-direction: row;
+    }
+}
+
+.tile:hover {
+    text-decoration: none;
+}
+
+.tile-hover {
+    transition: scale 0.1s, box-shadow 0.1s;
+}
+
+.tile-hover:hover {
+    scale: 1.02;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.tile>.tile-logo {
+    min-width: 12rem;
+    height: 12rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--tk-tile-icon-bg);
+}
+
+@media screen and (min-width: 32rem) {
+    .tile>.tile-logo {
+        width: 12rem;
+        height: initial;
+        min-height: 12rem;
+    }
+}
+
+.tile>.tile-logo>.tile-icon {
+    width: 6rem;
+    height: 6rem;
+    fill: var(--tk-tile-icon-fill);
+    stroke: var(--tk-tile-icon-fill);
+}
+
+.tile>.tile-logo>.tile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tile>.tile-content {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tile h1,
+.tile h2,
+.tile h3,
+.tile h4,
+.tile h5,
+.tile h6,
+.tile p {
+    margin: 0;
+}
+
+
+
+/* Project Tile */
+.project-tiles {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-tile {
+    background: var(--tk-project-tile-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 36rem) {
+    .project-tile {
+        flex-direction: row;
+    }
+}
+
+.project-tile-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-tile-image {
+    min-width: 16rem;
+    height: 16rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 36rem) {
+    .project-tile-image {
+        width: 16rem;
+        height: initial;
+        min-height: 16rem;
+    }
+}
+
+.project-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-tile h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.button {
+    display: block;
+    border: var(--tk-layout-border-size) solid var(--tk-button);
+    color: var(--tk-button);
+    padding: 0.6rem 2rem;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    /*   text-align: center; */
+}
+
+.button img {
+    filter: var(--filter-blue);
+}
+
+.button:hover {
+    background-color: var(--tk-button);
+    color: var(--tk-button-hover);
+    text-decoration: none;
+}
+
+.button:hover img {
+    filter: var(--filter-green);
+}
+
+.button-accent {
+    border: var(--tk-layout-border-size) solid var(--tk-button-accent);
+    color: var(--tk-button-accent);
+}
+
+.button-accent img {
+    filter: var(--filter-green);
+}
+
+.button-accent:hover {
+    background-color: var(--tk-button-accent);
+    color: var(--tk-button-hover);
+    text-decoration: none;
+}
+
+.button-accent:hover img {
+    filter: var(--filter-white);
+}
+
+.button-neutral {
+    border: var(--tk-layout-border-size) solid var(--tk-button-neutral);
+    color: var(--tk-button-neutral);
+}
+
+.button-neutral img {
+    filter: var(--filter-gray);
+}
+
+.button-neutral:hover {
+    background-color: var(--tk-button-neutral);
+    color: var(--tk-button-hover);
+    text-decoration: none;
+}
+
+.button-neutral:hover img {
+    filter: var(--filter-white);
+}
+
+.button:has(img) {
+    padding: 0.6rem;
+}
+
+.button img {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--tk-footer-bg);
+    color: var(--tk-footer-text);
+}
+
+footer > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 32rem) {
+    footer > .container {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+}
+
+footer>div>div {
+    flex: 1;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--tk-footer-text);
+}

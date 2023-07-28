@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Lato&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-dark flex flex-col min-h-screen
+    }
+
+    main {
+        @apply flex-grow
+    }
+    
+    h1 {
+        @apply font-serif font-bold text-[28pt]
+    }
+    
+    h2 {
+        @apply font-serif font-bold text-[24pt]
+    }
+    
+    h3 {
+        @apply font-serif font-bold text-[20pt]
+    }
+    
+    h4 {
+        @apply font-serif font-bold text-[18pt]
+    }
+    
+    h5 {
+        @apply font-bold text-[16pt]
+    }
+    
+    h6 {
+        @apply font-bold text-[14pt]
+    }
+    
+    p,
+    a,
+    li {
+        @apply font-medium text-[14pt]
+    }
+    
+    a {
+        @apply text-blue
+    }
+    
+    a:hover {
+        @apply text-green
+    }
+
+    main h1 {
+        @apply mt-16
+    }
+
+    main h2 {
+        @apply mt-12
+    }
+
+    main h3,
+    main h4 {
+        @apply mt-8
+    }
+
+    main h5,
+    main h6 {
+        @apply mt-4
+    }
+
+    main p {
+        @apply mt-2
+    }
+
+    main h1:first-child,
+    main h2:first-child,
+    main h3:first-child,
+    main h4:first-child,
+    main h5:first-child,
+    main h6:first-child,
+    main p:first-child {
+        @apply m-0
+    }
+}
+
+
+
+/* Filters */
+.filter-white {
+    filter: invert(100%);
+}
+
+.filter-light {
+    filter: invert(99%) sepia(77%) saturate(44%) hue-rotate(236deg) brightness(116%) contrast(90%);
+}
+
+.filter-dark {
+    filter: invert(9%) sepia(0%) saturate(38%) hue-rotate(227deg) brightness(96%) contrast(91%);
+}
+
+.filter-green {
+    filter: invert(68%) sepia(59%) saturate(6779%) hue-rotate(92deg) brightness(106%) contrast(75%);
+}
+
+.filter-blue {
+    filter: invert(12%) sepia(81%) saturate(6119%) hue-rotate(219deg) brightness(90%) contrast(88%);
+}
+
+.filter-gray {
+    filter: invert(35%) sepia(0%) saturate(1746%) hue-rotate(193deg) brightness(93%) contrast(81%);
+}
+
+
+
+
+
+
+
+@layer components {
+    /* TK Border */
+    .tk-border {
+        @apply border-solid border-[5px]
+    }
+
+
+    /* TK Underline */
+    .tk-underline {
+        @apply relative;
+    }
+
+    .tk-underline:after {
+        @apply block bg-blue absolute w-full h-[5px] top-12;
+        content: '';
+    }
+
+    .hover\:tk-underline:hover {
+        @apply tk-underline
+    }
+
+
+    /* TK List Item */
+    .tk-list-item {
+        @apply ml-4 relative
+    }
+
+    .tk-list-item::before {
+        @apply block bg-blue absolute w-2 h-2 -left-4 top-3;
+        content: '';
+    }
+
+
+    /* TK Container */
+    .tk-container {
+        @apply max-w-screen-xl my-0 mx-auto py-12 px-4
+    }
+
+
+    /* TK Hero Image */
+    .tk-hero-image {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .tk-hero-image::after {
+        -webkit-backdrop-filter: blur(15px);
+        /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+        backdrop-filter: blur(15px);
+        /* Supported in Chrome 76 */
+    
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+
+    /* TK Button */
+    .tk-buttons {
+        @apply flex flex-row flex-wrap gap-4
+    }
+
+    main .tk-buttons {
+        @apply mt-4
+    }
+    
+    .tk-button {
+        @apply block tk-border py-2.5 px-8 font-bold m-0
+    }
+
+    .tk-button img {
+        @apply h-8
+    }
+
+    .tk-button:has(img) {
+        @apply p-2.5
+    }
+    
+    /* Green */
+    .tk-button-green {
+        @apply text-green border-green
+    }
+    
+    .tk-button-green img {
+        @apply filter-green
+    }
+    
+    .tk-button-green:hover {
+        @apply bg-green text-light
+    }
+    
+    .tk-button-green:hover img {
+        @apply filter-white
+    }
+    
+    /* Blue */
+    .tk-button-blue {
+        @apply text-blue border-blue
+    }
+    
+    .tk-button-blue img {
+        @apply filter-blue
+    }
+    
+    .tk-button-blue:hover {
+        @apply bg-blue text-light
+    }
+    
+    .tk-button-blue:hover img {
+        @apply filter-white
+    }
+    
+    /* Gray */
+    .tk-button-gray {
+        @apply text-gray border-gray
+    }
+    
+    .tk-button-gray img {
+        @apply filter-gray
+    }
+    
+    .tk-button-gray:hover {
+        @apply bg-gray text-light
+    }
+    
+    .tk-button-gray:hover img {
+        @apply filter-white
+    }
+}

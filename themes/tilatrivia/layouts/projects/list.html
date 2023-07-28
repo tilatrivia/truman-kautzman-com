@@ -1,41 +1,17 @@
 {{ define "main" }}
 <main>
-    <div>
+    <div class="tk-container">
         <h1>{{ .Title }}</h1>
 
         {{ .Content }}
 
-        {{ range $page := .Pages }}
-        <article class="tile tile-hover">
-            <a class="tile-logo" href="{{ $page.RelPermalink }}">
-                {{ with .Params.image }}
-                <img class="tile-image" src="./{{ . }}" />
-                {{ else }}
-                <img class="tile-icon" src="../nav-projects.svg">
-                {{ end }}
-            </a>
-
-            <div class="tile-content">
-                <h3>{{ .Title }}</h3>
-
-                {{ with .Description }}
-                <p>{{ . }}</p>
-                {{ end }}
-
-                <div class="buttons">
-                    {{ with .Params.link }}
-                    <a class="button button-accent" href="{{ . }}" target="_blank">Visit</a>
-                    {{ end }}
-
-                    {{ with .Params.source }}
-                    <a class="button" href="{{ . }}" target="_blank">Source</a>
-                    {{ end }}
-
-                    <a class="button" href="{{ .RelPermalink }}">Learn More</a>
-                </div>
-            </div>
-        </article>
-        {{ end }}
+        <div class="flex flex-col gap-8 mt-4">
+            {{ range $page := .Pages }}
+            <article>
+                {{- partial "project-tile.html" $page -}}
+            </article>
+            {{ end }}
+        </div>
 
     </div>
 </main>

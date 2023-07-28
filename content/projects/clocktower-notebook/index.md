@@ -1,9 +1,10 @@
 ---
 title: "Clocktower Notebook"
-image: "clocktower-icon.png"
-description: "A note-keeping tool for playing Blood on the Clocktower"
+image: "thumbnail.png"
+description: "A note-keeping tool for playing Blood on the Clocktower, a social deduction party game."
 link: "https://clocktower.trumank.dev/"
 source: "https://github.com/tilatrivia/clocktower-notebook"
+weight: 30
 ---
 
 The goal of Clocktower Notebook is to make note-taking while playing the game Blood on the Clocktower faster and more effective. If you want to learn more about what that entails, keep reading. If you want to see the app in action, go to [clocktower.trumank.dev](https://clocktower.trumank.dev/).

@@ -1,0 +1,18 @@
+<div class="bg-gray-light flex flex-col md:flex-row">
+    <img class="w-full h-64 md:w-64 md:h-auto object-cover" src="{{ .RelPermalink }}/{{ .Params.image }}" href="{{ .RelPermalink }}" />
+    <div class="p-8 flex flex-col justify-center">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Description }}</p>
+        <div class="tk-buttons">
+            {{ with .Params.link }}
+            <a class="tk-button tk-button-green" href="{{ . }}">Visit</a>
+            {{ end }}
+            
+            {{ with .Params.source }}
+            <a class="tk-button tk-button-blue" href="{{ . }}">Source</a>
+            {{ end }}
+
+            <a class="tk-button tk-button-blue" href="{{ .RelPermalink }}">Learn More</a>
+        </div>
+    </div>
+</div>

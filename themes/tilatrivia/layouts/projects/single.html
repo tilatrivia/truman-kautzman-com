@@ -2,67 +2,31 @@
 {{ $page := . }}
 
 
-<div {{ with .Params.image }} class="hero hero-image" style="background-image: url('../{{ . }}')" {{ else }}
-    class="hero" {{ end }}>
-    <div>
-        <div class="tile">
-            <a class="tile-logo">
-                {{ with .Params.image }}
-                <img class="tile-image" src="../{{ . }}" />
-                {{ else }}
-                <img class="tile-icon" src="../../nav-projects.svg">
-                {{ end }}
-            </a>
-
-            <div class="tile-content">
-                <h3>{{ .Title }}</h3>
-
-                {{ with .Description }}
-                <p>{{ . }}</p>
+<div
+    {{ with .Params.image }}
+    class="tk-hero-image" style="background-image: url('./{{ . }}')"
+    {{ end }}
+>
+    <div class="max-w-screen-xl my-0 mx-auto py-32 px-4 relative z-10">
+        <div class="bg-gray-light tk-border border-gray p-8">
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Description }}</p>
+            <div class="tk-buttons mt-4">
+                {{ with .Params.link }}
+                <a class="tk-button tk-button-green" href="{{ . }}">Visit</a>
                 {{ end }}
 
-                <div class="buttons">
-                    {{ with .Params.link }}
-                    <a class="button button-accent" href="{{ . }}" target="_blank">Visit</a>
-                    {{ end }}
-
-                    {{ with .Params.source }}
-                    <a class="button" href="{{ . }}" target="_blank">Source</a>
-                    {{ end }}
-                </div>
+                {{ with .Params.source }}
+                <a class="tk-button tk-button-blue" href="{{ . }}">Source</a>
+                {{ end }}
             </div>
         </div>
     </div>
 </div>
 
 <main>
-    <div>
+    <div class="tk-container">
         {{ .Content }}
     </div>
-    <!-- <div class="flex flex-col sm:flex-row my-6">
-        {{ with .Params.image }}
-            <a href="{{ $page.Params.link }}" class="bg-accent sm:w-64 h-48 flex-shrink-0">
-                <img src="../{{ . }}" class="w-full h-full object-cover">
-            </a>
-            {{ end }}
-
-        <div class="bg-opacity-80 p-4">
-            <h1 class="mt-0">{{ .Title }}</h1>
-
-            {{ with .Description }}
-            <p>{{ . }}</p>
-            {{ end }}
-
-            <div class="flex flex-row gap-4 flex-wrap mt-2">
-                {{ with .Params.link }}
-                <a class="button button-accent" href="{{ . }}" target="_blank">Visit</a>
-                {{ end }}
-
-                {{ with .Params.source }}
-                <a class="button" href="{{ . }}" target="_blank">Source</a>
-                {{ end }}
-            </div>
-        </div>
-    </div> -->
 </main>
 {{ end }}

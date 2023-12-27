@@ -43,17 +43,17 @@ Course work included web development, data structures, discrete math, computer s
 ## Experience
 
 {{< box
-    title="Summer Software Engineering Intern"
-    subtitle="Imagine Learning - Remote - Summer 2023"
+    title="Associate Software Engineer"
+    subtitle="Imagine Learning - Remote - May 2023 to Present"
     class="bg-gray-light mt-4"
 >}}
-As my first real exposure to industry software production, I was exposed to large-scale software challenges and solutions, scalability and cost considerations, and Agile development practices. I also became familiar with working on a team to divide and conquer and deliver business value.I also wrote production React TypeScript components and Kotlin Micronaut endpoints.
+As my first exposure to industry software production, I was exposed to large-scale software challenges and solutions, scalability and cost considerations, and Agile development practices. I became familiar with working on a team to divide and conquer and deliver business value. Here I wrote several production React TypeScript components and Kotlin Micronaut endpoints.
 {{< /box >}}
 
 
 {{< box
     title="Lighting Technician"
-    subtitle="BYU OIT AV Productions - Provo, UT - August 2017 to Present"
+    subtitle="BYU OIT AV Productions - Provo, UT - August 2017 to December 2023"
     class="bg-gray-light mt-8"
 >}}
 Here I gained and applied understanding of technical lighting equipment including professional lighting control and programming environments. I also worked closely with others to make decisions and accomplish tasks requiring organization of up to 100 lighting fixtures. I also contributed to high profile events such as BYU Devotionals and gained confidence under time and quality constraints.

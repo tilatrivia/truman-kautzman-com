@@ -47,7 +47,7 @@ Course work included web development, data structures, discrete math, computer s
     subtitle="Imagine Learning - Remote - May 2023 to Present"
     class="bg-gray-light mt-4"
 >}}
-As my first real exposure to industry software production, I was exposed to large-scale software challenges and solutions, scalability and cost considerations, and Agile development practices. I also became familiar with working on a team to divide and conquer and deliver business value.I also wrote production React TypeScript components and Kotlin Micronaut endpoints.
+As my first exposure to industry software production, I was exposed to large-scale software challenges and solutions, scalability and cost considerations, and Agile development practices. I became familiar with working on a team to divide and conquer and deliver business value. Here I wrote several production React TypeScript components and Kotlin Micronaut endpoints.
 {{< /box >}}
 
 

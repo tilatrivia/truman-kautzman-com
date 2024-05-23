@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Lato&display=swap');
 
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -34,9 +34,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -52,6 +54,8 @@ html {
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -123,8 +127,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -133,8 +139,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -203,6 +213,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -226,9 +238,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -496,7 +508,7 @@ a{
 
 a:hover{
   --tw-text-opacity: 1;
-  color: rgb(32 179 44 / var(--tw-text-opacity));
+  color: rgb(26 158 37 / var(--tw-text-opacity));
 }
 
 main h1{
@@ -579,6 +591,10 @@ main h1:first-child,
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop{
@@ -629,6 +645,10 @@ main h1:first-child,
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 /* TK Border */
@@ -733,9 +753,9 @@ main .tk-buttons{
 
 .tk-button-green{
   --tw-border-opacity: 1;
-  border-color: rgb(32 179 44 / var(--tw-border-opacity));
+  border-color: rgb(26 158 37 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(32 179 44 / var(--tw-text-opacity));
+  color: rgb(26 158 37 / var(--tw-text-opacity));
 }
 
 .tk-button-green img {
@@ -744,7 +764,7 @@ main .tk-buttons{
 
 .tk-button-green:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(32 179 44 / var(--tw-bg-opacity));
+  background-color: rgb(26 158 37 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(247 247 247 / var(--tw-text-opacity));
 }
@@ -880,10 +900,6 @@ main .tk-buttons{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -935,7 +951,7 @@ main .tk-buttons{
 
 .bg-green{
   --tw-bg-opacity: 1;
-  background-color: rgb(32 179 44 / var(--tw-bg-opacity));
+  background-color: rgb(26 158 37 / var(--tw-bg-opacity));
 }
 
 .bg-green-light{

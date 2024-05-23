@@ -99,7 +99,7 @@
 }
 
 .filter-green {
-    filter: invert(68%) sepia(59%) saturate(6779%) hue-rotate(92deg) brightness(106%) contrast(75%);
+    filter: invert(35%) sepia(99%) saturate(739%) hue-rotate(86deg) brightness(105%) contrast(84%);
 }
 
 .filter-blue {
@@ -144,7 +144,7 @@
     }
 
     .tk-list-item::before {
-        @apply block bg-blue absolute w-2 h-2 -left-4 top-3;
+        @apply block bg-green absolute w-2 h-2 -left-4 top-3;
         content: '';
     }
 

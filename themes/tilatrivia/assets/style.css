@@ -675,7 +675,7 @@ main h1:first-child,
   height: 0.5rem;
   width: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(15 73 189 / var(--tw-bg-opacity));
+  background-color: rgb(26 158 37 / var(--tw-bg-opacity));
   content: '';
 }
 
@@ -759,7 +759,7 @@ main .tk-buttons{
 }
 
 .tk-button-green img {
-  filter: invert(68%) sepia(59%) saturate(6779%) hue-rotate(92deg) brightness(106%) contrast(75%);
+  filter: invert(35%) sepia(99%) saturate(739%) hue-rotate(86deg) brightness(105%) contrast(84%);
 }
 
 .tk-button-green:hover{
@@ -1027,7 +1027,7 @@ main .tk-buttons{
 }
 
 .filter-green {
-  filter: invert(68%) sepia(59%) saturate(6779%) hue-rotate(92deg) brightness(106%) contrast(75%);
+  filter: invert(35%) sepia(99%) saturate(739%) hue-rotate(86deg) brightness(105%) contrast(84%);
 }
 
 .filter-blue {

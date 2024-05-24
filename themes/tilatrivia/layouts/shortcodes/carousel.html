@@ -1,0 +1,46 @@
+<div class="bg-dark p-8">
+    <div class="carousel">
+        {{ .Inner }}
+    </div>
+    <div class="flex flex-row justify-center gap-4 mt-8">
+        <button id="prev" class="tk-button tk-button-gray w-24">&lt;</button>
+        <button id="count" class="tk-button tk-button-gray w-24">1/1</button>
+        <button id="next" class="tk-button tk-button-gray w-24">&gt;</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('.carousel .carousel-image');
+        const countButton = document.getElementById('count');
+
+        let currentIndex = 0;
+
+        if (images.length > 0) {
+            showImage(currentIndex)
+        }
+
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('hidden', i !== index);
+            });
+            countButton.innerHTML = (currentIndex + 1) + '/' + (images.length)
+        }
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            showImage(currentIndex);
+        });
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        });
+
+        countButton.addEventListener('click', () => {
+            currentIndex = 0
+            showImage(currentIndex)
+        })
+    })
+</script>

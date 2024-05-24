@@ -1102,6 +1102,12 @@ main .tk-buttons{
   color: rgb(32 32 32 / var(--tw-text-opacity));
 }
 
+@media (min-width: 24rem){
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 48rem){
   .md\:h-auto{
     height: auto;
@@ -1127,6 +1133,10 @@ main .tk-buttons{
 @media (min-width: 64rem){
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
   }
 }
 

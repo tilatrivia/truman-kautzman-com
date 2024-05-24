@@ -10,7 +10,7 @@
         <article class="flex flex-col gap-8 mt-8">
             <a class="p-8 bg-gray-light hover:bg-green-light text-dark hover:text-dark" href="{{ .Permalink }}">
 
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-col md:flex-row justify-between">
                     <h2>{{ .Title }}</h2>
     
                     {{ with .Date.Format "2 January 2006" }}

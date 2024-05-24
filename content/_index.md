@@ -14,9 +14,9 @@ Hi, I'm Truman Kautzman. I really enjoy making delightful tools and software is 
     {{< button label="Learn More" link="/about" class="tk-button-blue" >}}
 {{< /buttons >}}
 
-## Inspiration
-I find inspiration in lots of places and sometimes its hard to pinpoint exactly where. However, I've curated some of my favorite artists and creatives that I know I enjoy the work of.
+## Articles
+Sometimes I like to share and write about things I enjoy. Hopefully you can find some articles here that are interesting and insightful.
 
 {{< buttons >}}
-    {{< button label="See What Inspires Me" link="/inspiration" class="tk-button-blue" >}}
+    {{< button label="Articles" link="/articles" class="tk-button-blue" >}}
 {{< /buttons >}}

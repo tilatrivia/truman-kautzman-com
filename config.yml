@@ -24,9 +24,9 @@ menu:
       params:
         description: "Learn about and use personal projects of mine"
     - identifier: "inspiration"
-      name: "Inspiration"
-      url: "/inspiration"
+      name: "Articles"
+      url: "/articles"
       weight: 30
       params:
-        description: "A collection of things that inspire me"
+        description: "Here is what I have to say about some cool things."
 

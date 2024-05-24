@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ $page := . }}
+<main>
+    <div class="tk-container">
+        <div class="flex flex-row justify-between">
+            <h2>{{ .Title }}</h2>
+
+            {{ with .Date.Format "2 January 2006" }}
+            <p class="text-gray">{{ . }}</p>
+            {{ end }}
+        </div>
+
+
+        {{ with .Description }}
+        <p>{{ . }}</p>
+        {{ end }}
+
+        {{ .Content }}
+
+    </div>
+</main>
+{{ end }}

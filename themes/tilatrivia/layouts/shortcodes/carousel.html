@@ -1,5 +1,5 @@
 <div class="bg-dark p-8">
-    <div class="carousel">
+    <div class="tk-carousel">
         {{ .Inner }}
     </div>
     <div class="flex flex-row justify-center gap-4 mt-8">
@@ -11,7 +11,7 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const images = document.querySelectorAll('.carousel .carousel-image');
+        const images = document.querySelectorAll('.tk-carousel > div');
         const countButton = document.getElementById('count');
 
         let currentIndex = 0;
@@ -19,7 +19,6 @@
         if (images.length > 0) {
             showImage(currentIndex)
         }
-
 
         function showImage(index) {
             images.forEach((img, i) => {

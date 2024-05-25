@@ -716,6 +716,25 @@ main h1:first-child,
   left: 0;
 }
 
+/* TK Image Carousel */
+
+div.tk-carousel-image p{
+  margin-bottom: 2rem;
+  height: 1.75rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(247 247 247 / var(--tw-text-opacity));
+}
+
+div.tk-carousel-image img{
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  max-height: 36rem;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 /* TK Button */
 
 .tk-buttons{
@@ -821,44 +840,12 @@ main .tk-buttons{
   filter: invert(100%);
 }
 
-.absolute{
-  position: absolute;
-}
-
 .relative{
   position: relative;
 }
 
-.left-0{
-  left: 0px;
-}
-
-.top-1\/2{
-  top: 50%;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.left-2{
-  left: 0.5rem;
-}
-
-.right-2{
-  right: 0.5rem;
-}
-
 .z-10{
   z-index: 10;
-}
-
-.m-2{
-  margin: 0.5rem;
-}
-
-.m-4{
-  margin: 1rem;
 }
 
 .mx-auto{
@@ -892,18 +879,6 @@ main .tk-buttons{
   margin-top: 2rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
-}
-
 .block{
   display: block;
 }
@@ -928,85 +903,12 @@ main .tk-buttons{
   height: 16rem;
 }
 
-.h-4{
-  height: 1rem;
-}
-
-.h-16{
-  height: 4rem;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
-.h-8{
-  height: 2rem;
-}
-
-.max-h-64{
-  max-height: 16rem;
-}
-
-.max-h-96{
-  max-height: 24rem;
-}
-
-.max-h-\[100rem\]{
-  max-height: 100rem;
-}
-
-.max-h-\[64rem\]{
-  max-height: 64rem;
-}
-
-.max-h-\[32rem\]{
-  max-height: 32rem;
-}
-
-.max-h-\[48rem\]{
-  max-height: 48rem;
-}
-
-.max-h-\[36rem\]{
-  max-height: 36rem;
-}
-
-.max-h-full{
-  max-height: 100%;
+.w-24{
+  width: 6rem;
 }
 
 .w-full{
   width: 100%;
-}
-
-.w-4{
-  width: 1rem;
-}
-
-.w-8{
-  width: 2rem;
-}
-
-.w-16{
-  width: 4rem;
-}
-
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-32{
-  width: 8rem;
-}
-
-.w-24{
-  width: 6rem;
 }
 
 .max-w-screen-xl{
@@ -1017,29 +919,8 @@ main .tk-buttons{
   max-width: 24rem;
 }
 
-.max-w-full{
-  max-width: 100%;
-}
-
 .flex-1{
   flex: 1 1 0%;
-}
-
-.flex-shrink{
-  flex-shrink: 1;
-}
-
-.flex-grow{
-  flex-grow: 1;
-}
-
-.-translate-y-1\/2{
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1{
@@ -1054,10 +935,6 @@ main .tk-buttons{
   flex-direction: column;
 }
 
-.items-center{
-  align-items: center;
-}
-
 .justify-end{
   justify-content: flex-end;
 }
@@ -1068,10 +945,6 @@ main .tk-buttons{
 
 .justify-between{
   justify-content: space-between;
-}
-
-.justify-around{
-  justify-content: space-around;
 }
 
 .gap-4{
@@ -1102,9 +975,9 @@ main .tk-buttons{
   background-color: rgb(161 190 247 / var(--tw-bg-opacity));
 }
 
-.bg-gray{
+.bg-dark{
   --tw-bg-opacity: 1;
-  background-color: rgb(92 92 92 / var(--tw-bg-opacity));
+  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
 }
 
 .bg-gray-light{
@@ -1122,16 +995,6 @@ main .tk-buttons{
   background-color: rgb(166 222 170 / var(--tw-bg-opacity));
 }
 
-.bg-dark{
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
-}
-
-.object-contain{
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1139,14 +1002,6 @@ main .tk-buttons{
 
 .p-8{
   padding: 2rem;
-}
-
-.p-4{
-  padding: 1rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .px-4{
@@ -1162,14 +1017,6 @@ main .tk-buttons{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.pb-0{
-  padding-bottom: 0px;
-}
-
-.text-center{
-  text-align: center;
 }
 
 .font-serif{
@@ -1188,17 +1035,8 @@ main .tk-buttons{
   font-size: 48pt;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-black{
   font-weight: 900;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .leading-none{
@@ -1295,10 +1133,6 @@ main .tk-buttons{
 
   .md\:p-16{
     padding: 4rem;
-  }
-
-  .md\:p-32{
-    padding: 8rem;
   }
 }
 

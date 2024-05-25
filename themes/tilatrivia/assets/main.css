@@ -122,7 +122,6 @@
         @apply border-solid border-[5px]
     }
 
-
     /* TK Underline */
     .tk-underline {
         @apply relative;
@@ -177,7 +176,17 @@
         top: 0;
         left: 0;
     }
+
     
+    /* TK Image Carousel */
+    div.tk-carousel-image p {
+        @apply text-light text-center h-7 mb-8
+    }
+
+    div.tk-carousel-image img {
+        @apply w-full h-full max-h-[36rem] aspect-square object-contain
+    }
+
 
     /* TK Button */
     .tk-buttons {

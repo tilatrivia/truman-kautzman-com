@@ -740,29 +740,29 @@ div.tk-carousel-image img{
 .tk-dev-icons{
   margin-top: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .tk-dev-icon{
   display: flex;
-  width: 8rem;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
-.tk-dev-icon img{
-  height: 6rem;
-  width: 6rem;
+.tk-dev-icon div{
+  height: 3rem;
+  width: 3rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+  padding: 0.5rem;
 }
 
-.tk-dev-icon h6{
-  margin-top: 1rem;
+.tk-dev-icon p{
+  margin-left: 1rem;
+  margin-top: 0px;
   text-align: center;
 }
 

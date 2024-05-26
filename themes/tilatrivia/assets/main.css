@@ -190,19 +190,19 @@
 
     /* TK Dev Icon */
     .tk-dev-icons {
-        @apply flex flex-row flex-wrap mt-4 gap-2 justify-around
+        @apply flex flex-col flex-wrap gap-4 mt-4 justify-around
     }
 
     .tk-dev-icon {
-        @apply flex flex-col items-center py-4 justify-between w-32
+        @apply flex flex-row items-center
     }
 
-    .tk-dev-icon img {
-        @apply h-24 w-24
+    .tk-dev-icon div {
+        @apply p-2 h-12 w-12 bg-light
     }
 
-    .tk-dev-icon h6 {
-        @apply mt-4 text-center
+    .tk-dev-icon p {
+        @apply ml-4 mt-0 text-center
     }
 
 

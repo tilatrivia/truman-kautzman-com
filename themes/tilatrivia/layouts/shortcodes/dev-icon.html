@@ -1,4 +1,8 @@
 <div class="tk-dev-icon">
-    <img width="96" height="96" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{ .Params.icon }}.svg" />
-    <h6>{{ .Params.name }}</h6>
+    <div>
+        {{ with .Params.icon }}
+            <img width="32" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{ . }}.svg" />
+        {{ end }}
+    </div>
+    <p>{{ .Params.name }}</p>
 </div>

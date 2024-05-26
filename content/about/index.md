@@ -4,8 +4,8 @@ title: "About"
 
 ## Qualifications
 
-{{< columns-2 >}}
-    {{< box title="Languages" class="bg-gray-light" >}}
+{{< columns-3 >}}
+{{< box title="Languages" class="bg-green-light" >}}
         {{< dev-icons >}}
             {{< dev-icon name="C" icon="c/c-original" >}}
             {{< dev-icon name="C++" icon="cplusplus/cplusplus-original" >}}
@@ -19,11 +19,11 @@ title: "About"
         {{< /dev-icons >}}
     {{< /box >}}
 
-    {{< box title="Technologies" class="bg-gray-light" >}}
+    {{< box title="Technologies" class="bg-green-light" >}}
         {{< dev-icons >}}
             {{< dev-icon name="Vue" icon="vuejs/vuejs-original" >}}
             {{< dev-icon name="React" icon="react/react-original" >}}
-            {{< dev-icon name="Flutter" icon="flutter/flutter-original" >}}
+            {{< dev-icon name="Flutter Dart" icon="flutter/flutter-original" >}}
             {{< dev-icon name="Tailwind CSS" icon="tailwindcss/tailwindcss-original" >}}
             {{< dev-icon name="Storybook" icon="storybook/storybook-original" >}}
             {{< dev-icon name="Android" icon="android/android-plain" >}}
@@ -31,28 +31,8 @@ title: "About"
             {{< dev-icon name="AWS Cloud" icon="amazonwebservices/amazonwebservices-original-wordmark" >}}
             {{< dev-icon name="DynamoDB" icon="dynamodb/dynamodb-original" >}}
             {{< dev-icon name="Kubernetes" icon="kubernetes/kubernetes-original" >}}
-            {{< dev-icon name="Jira" icon="jira/jira-original" >}}
-            {{< dev-icon name="Confluence" icon="confluence/confluence-original" >}}
+            {{< dev-icon name="Micronaut" >}}
         {{< /dev-icons >}}
-    {{< /box >}}
-{{< /columns-2 >}}
-
-{{< columns-3 >}}
-    {{< box title="Languages" class="bg-green-light" >}}
-        {{< list-item "C and C++">}}
-        {{< list-item "Java and Kotlin">}}
-        {{< list-item "Python">}}
-        {{< list-item "HTML and CSS">}}
-        {{< list-item "JavaScript and TypeScript">}}
-    {{< /box >}}
-
-    {{< box title="Technologies" class="bg-green-light" >}}
-        {{< list-item "Vue and Vue TypeScript">}}
-        {{< list-item "React TypeScript">}}
-        {{< list-item "Flutter Dart">}}
-        {{< list-item "Java Android">}}
-        {{< list-item "Micronaut">}}
-        {{< list-item "Storybook">}}
     {{< /box >}}
 
     {{< box title="Skills" class="bg-green-light" >}}

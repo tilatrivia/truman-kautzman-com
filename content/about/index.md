@@ -5,7 +5,7 @@ title: "About"
 ## Qualifications
 
 {{< columns-3 >}}
-{{< box title="Languages" class="bg-green-light" >}}
+{{< box title="Languages" class="bg-gray-light" >}}
         {{< dev-icons >}}
             {{< dev-icon name="C" icon="c/c-original" >}}
             {{< dev-icon name="C++" icon="cplusplus/cplusplus-original" >}}
@@ -19,7 +19,7 @@ title: "About"
         {{< /dev-icons >}}
     {{< /box >}}
 
-    {{< box title="Technologies" class="bg-green-light" >}}
+    {{< box title="Technologies" class="bg-gray-light" >}}
         {{< dev-icons >}}
             {{< dev-icon name="Vue" icon="vuejs/vuejs-original" >}}
             {{< dev-icon name="React" icon="react/react-original" >}}
@@ -35,7 +35,7 @@ title: "About"
         {{< /dev-icons >}}
     {{< /box >}}
 
-    {{< box title="Skills" class="bg-green-light" >}}
+    {{< box title="Skills" class="bg-gray-light" >}}
         {{< list-item "Software Design Principles and Patterns">}}
         {{< list-item "User Experience Design">}}
         {{< list-item "Proficiency with Testing and Formal Verification">}}

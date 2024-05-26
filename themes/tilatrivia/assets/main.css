@@ -198,11 +198,11 @@
     }
 
     .tk-dev-icon div {
-        @apply p-2 h-12 w-12 bg-light
+        @apply h-8 w-8
     }
 
     .tk-dev-icon p {
-        @apply ml-4 mt-0 text-center
+        @apply ml-2 mt-0 text-center
     }
 
 

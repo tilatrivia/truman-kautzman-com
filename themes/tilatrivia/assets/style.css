@@ -753,15 +753,12 @@ div.tk-carousel-image img{
 }
 
 .tk-dev-icon div{
-  height: 3rem;
-  width: 3rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
-  padding: 0.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .tk-dev-icon p{
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   margin-top: 0px;
   text-align: center;
 }

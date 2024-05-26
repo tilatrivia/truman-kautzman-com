@@ -735,6 +735,37 @@ div.tk-carousel-image img{
      object-fit: contain;
 }
 
+/* TK Dev Icon */
+
+.tk-dev-icons{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.tk-dev-icon{
+  display: flex;
+  width: 8rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.tk-dev-icon img{
+  height: 6rem;
+  width: 6rem;
+}
+
+.tk-dev-icon h6{
+  margin-top: 1rem;
+  text-align: center;
+}
+
 /* TK Button */
 
 .tk-buttons{

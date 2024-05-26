@@ -4,6 +4,39 @@ title: "About"
 
 ## Qualifications
 
+{{< columns-2 >}}
+    {{< box title="Languages" class="bg-gray-light" >}}
+        {{< dev-icons >}}
+            {{< dev-icon name="C" icon="c/c-original" >}}
+            {{< dev-icon name="C++" icon="cplusplus/cplusplus-original" >}}
+            {{< dev-icon name="Java" icon="java/java-original" >}}
+            {{< dev-icon name="Kotlin" icon="kotlin/kotlin-original" >}}
+            {{< dev-icon name="Python" icon="python/python-original" >}}
+            {{< dev-icon name="HTML" icon="html5/html5-original" >}}
+            {{< dev-icon name="CSS" icon="css3/css3-original" >}}
+            {{< dev-icon name="JavaScript" icon="javascript/javascript-original" >}}
+            {{< dev-icon name="TypeScript" icon="typescript/typescript-original" >}}
+        {{< /dev-icons >}}
+    {{< /box >}}
+
+    {{< box title="Technologies" class="bg-gray-light" >}}
+        {{< dev-icons >}}
+            {{< dev-icon name="Vue" icon="vuejs/vuejs-original" >}}
+            {{< dev-icon name="React" icon="react/react-original" >}}
+            {{< dev-icon name="Flutter" icon="flutter/flutter-original" >}}
+            {{< dev-icon name="Tailwind CSS" icon="tailwindcss/tailwindcss-original" >}}
+            {{< dev-icon name="Storybook" icon="storybook/storybook-original" >}}
+            {{< dev-icon name="Android" icon="android/android-plain" >}}
+            {{< dev-icon name="Arduino" icon="arduino/arduino-original" >}}
+            {{< dev-icon name="AWS Cloud" icon="amazonwebservices/amazonwebservices-original-wordmark" >}}
+            {{< dev-icon name="DynamoDB" icon="dynamodb/dynamodb-original" >}}
+            {{< dev-icon name="Kubernetes" icon="kubernetes/kubernetes-original" >}}
+            {{< dev-icon name="Jira" icon="jira/jira-original" >}}
+            {{< dev-icon name="Confluence" icon="confluence/confluence-original" >}}
+        {{< /dev-icons >}}
+    {{< /box >}}
+{{< /columns-2 >}}
+
 {{< columns-3 >}}
     {{< box title="Languages" class="bg-green-light" >}}
         {{< list-item "C and C++">}}

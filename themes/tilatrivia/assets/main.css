@@ -188,6 +188,24 @@
     }
 
 
+    /* TK Dev Icon */
+    .tk-dev-icons {
+        @apply flex flex-row flex-wrap mt-4 gap-2 justify-around
+    }
+
+    .tk-dev-icon {
+        @apply flex flex-col items-center py-4 justify-between w-32
+    }
+
+    .tk-dev-icon img {
+        @apply h-24 w-24
+    }
+
+    .tk-dev-icon h6 {
+        @apply mt-4 text-center
+    }
+
+
     /* TK Button */
     .tk-buttons {
         @apply flex flex-row flex-wrap gap-4

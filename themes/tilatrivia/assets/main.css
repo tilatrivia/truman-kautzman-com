@@ -5,7 +5,7 @@
 
 @layer base {
     body {
-        @apply text-dark flex flex-col min-h-screen
+        @apply text-dark bg-light flex flex-col min-h-screen
     }
 
     main {
@@ -87,7 +87,7 @@
 
 /* Filters */
 .filter-white {
-    filter: invert(100%);
+    filter: saturate(0%) brightness(0%) invert(100%);
 }
 
 .filter-light {
@@ -203,6 +203,30 @@
 
     .tk-dev-icon p {
         @apply ml-2 mt-0 text-center
+    }
+
+    .tk-dev-icons-grid {
+        @apply grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 mt-4
+    }
+
+    .tk-dev-icons-grid > div {
+        @apply relative aspect-square flex items-center justify-center text-center p-2 overflow-hidden
+    }
+
+    .tk-dev-icons-grid > div > img {
+        @apply w-2/3 m-auto filter-white
+    }
+
+    .tk-dev-icons-grid > div > div {
+        @apply absolute opacity-0 bg-light/80 w-full h-full m-0 flex items-center justify-center
+    }
+
+    .tk-dev-icons-grid > div > div > p {
+        @apply text-center font-bold text-[18pt]
+    }
+
+    .tk-dev-icons-grid > div:hover > div {
+        @apply opacity-100 transition-opacity
     }
 
 

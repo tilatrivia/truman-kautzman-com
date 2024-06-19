@@ -4,45 +4,7 @@ title: "About"
 
 ## Qualifications
 
-{{< columns-3 >}}
-{{< box title="Languages" class="bg-gray-light" >}}
-        {{< dev-icons >}}
-            {{< dev-icon name="C" icon="c/c-original" >}}
-            {{< dev-icon name="C++" icon="cplusplus/cplusplus-original" >}}
-            {{< dev-icon name="Java" icon="java/java-original" >}}
-            {{< dev-icon name="Kotlin" icon="kotlin/kotlin-original" >}}
-            {{< dev-icon name="Python" icon="python/python-original" >}}
-            {{< dev-icon name="HTML" icon="html5/html5-original" >}}
-            {{< dev-icon name="CSS" icon="css3/css3-original" >}}
-            {{< dev-icon name="JavaScript" icon="javascript/javascript-original" >}}
-            {{< dev-icon name="TypeScript" icon="typescript/typescript-original" >}}
-        {{< /dev-icons >}}
-    {{< /box >}}
-
-    {{< box title="Technologies" class="bg-gray-light" >}}
-        {{< dev-icons >}}
-            {{< dev-icon name="Vue" icon="vuejs/vuejs-original" >}}
-            {{< dev-icon name="React" icon="react/react-original" >}}
-            {{< dev-icon name="Flutter Dart" icon="flutter/flutter-original" >}}
-            {{< dev-icon name="Tailwind CSS" icon="tailwindcss/tailwindcss-original" >}}
-            {{< dev-icon name="Storybook" icon="storybook/storybook-original" >}}
-            {{< dev-icon name="Android" icon="android/android-plain" >}}
-            {{< dev-icon name="Arduino" icon="arduino/arduino-original" >}}
-            {{< dev-icon name="AWS Cloud" icon="amazonwebservices/amazonwebservices-original-wordmark" >}}
-            {{< dev-icon name="DynamoDB" icon="dynamodb/dynamodb-original" >}}
-            {{< dev-icon name="Kubernetes" icon="kubernetes/kubernetes-original" >}}
-            {{< dev-icon name="Micronaut" >}}
-        {{< /dev-icons >}}
-    {{< /box >}}
-
-    {{< box title="Skills" class="bg-gray-light" >}}
-        {{< list-item "Software Design Principles and Patterns">}}
-        {{< list-item "User Experience Design">}}
-        {{< list-item "Proficiency with Testing and Formal Verification">}}
-        {{< list-item "Effective Interpersonal and Technical Communication">}}
-        {{< list-item "Understanding of the Big Picture and Focus on Details">}}
-    {{< /box >}}
-{{< /columns-3 >}}
+{{< dev-icons-grid >}}
 
 ## Education
 

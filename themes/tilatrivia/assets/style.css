@@ -737,33 +737,7 @@ div.tk-carousel-image img{
      object-fit: contain;
 }
 
-/* TK Dev Icon */
-
-.tk-dev-icons{
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem;
-}
-
-.tk-dev-icon{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.tk-dev-icon div{
-  height: 2rem;
-  width: 2rem;
-}
-
-.tk-dev-icon p{
-  margin-left: 0.5rem;
-  margin-top: 0px;
-  text-align: center;
-}
+/* TK Dev Icon Grid */
 
 .tk-dev-icons-grid{
   margin-top: 1rem;
@@ -1168,11 +1142,6 @@ main .tk-buttons{
 .bg-dark{
   --tw-bg-opacity: 1;
   background-color: rgb(32 32 32 / var(--tw-bg-opacity));
-}
-
-.bg-gray{
-  --tw-bg-opacity: 1;
-  background-color: rgb(92 92 92 / var(--tw-bg-opacity));
 }
 
 .bg-gray-light{

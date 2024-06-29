@@ -31,7 +31,7 @@ I decided it would be good to send a visual aid along with our description so I 
     {{< carousel-image src="wedding-website-banner.png" title="A banner from the wedding website." >}}
 {{< /carousel >}}
 
-We are very happy with the results. Combined with our awesome engagement photos take by [Brynlee Barker](https://www.bybryn.com/) the website and cards turned out awesome and they preceded a wonderful wedding and reception! It was really special for me to be able to make the materials for our wedding. It may not be anything crazy, but it is fun, cute, and ours. The frog has even become our unofficial logo!
+We are very happy with the results. Combined with our awesome engagement photos taken by [Brynlee Barker](https://www.bybryn.com/) the website and cards turned out awesome and they preceded a wonderful wedding and reception! It was really special for me to be able to make the materials for our wedding. It may not be anything crazy, but it is fun, cute, and ours. The frog has even become our unofficial logo!
 
 ## How It Was Made
 

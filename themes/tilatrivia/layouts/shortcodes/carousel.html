@@ -1,18 +1,27 @@
-<div class="bg-dark p-8 mt-4">
-    <div class="tk-carousel">
+<div class="tk-carousel bg-dark p-8 mt-4">
+    <div class="tk-carousel-images">
         {{ .Inner }}
     </div>
     <div class="flex flex-row justify-center gap-4 mt-8">
-        <button id="prev" class="tk-button tk-button-gray w-24">&lt;</button>
-        <button id="count" class="tk-button tk-button-gray w-24">1/1</button>
-        <button id="next" class="tk-button tk-button-gray w-24">&gt;</button>
+        <button class="tk-carousel-prev tk-button tk-button-gray w-24">&lt;</button>
+        <button class="tk-carousel-count tk-button tk-button-gray w-24">1/1</button>
+        <button class="tk-carousel-next tk-button tk-button-gray w-24">&gt;</button>
     </div>
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const images = document.querySelectorAll('.tk-carousel > div');
-        const countButton = document.getElementById('count');
+var loaded = false
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (loaded) return
+    loaded = true
+
+    document.querySelectorAll('.tk-carousel').forEach(carousel => {
+        const images = carousel.querySelectorAll('.tk-carousel-images > div');
+        console.log(carousel, images)
+        const prevButton = carousel.querySelector('.tk-carousel-prev')
+        const countButton = carousel.querySelector('.tk-carousel-count');
+        const nextButton = carousel.querySelector('.tk-carousel-next')
 
         let currentIndex = 0;
 
@@ -27,12 +36,12 @@
             countButton.innerHTML = (currentIndex + 1) + '/' + (images.length)
         }
 
-        document.getElementById('prev').addEventListener('click', () => {
+        prevButton.addEventListener('click', () => {
             currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
             showImage(currentIndex);
         });
 
-        document.getElementById('next').addEventListener('click', () => {
+        nextButton.addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % images.length;
             showImage(currentIndex);
         });
@@ -42,4 +51,5 @@
             showImage(currentIndex)
         })
     })
+})
 </script>

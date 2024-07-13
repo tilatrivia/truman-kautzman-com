@@ -8,9 +8,9 @@ weight: 10
 
 ## Why Make Your Own Wedding Website?
 
-As many couple do, my fiance Jessica and I wanted a website to celebrate and share information about our upcoming wedding. We were holding three events all over the country and creating multiple registries. We needed to keep all the details straight for everyone who would be participating.
+These days, many engaged couples use a website to get the word out about their weddings. My then my fiance Jessica and I definitely needed a website ourselves. We were holding three events all over the country and creating multiple registries. We needed to keep all the details straight for everyone who would be participating.
 
-There are many no-code tools specifically for wedding websites, and many will even sell themed invitations too. They tend to be very formal and easy to use. Well, formal wasn't entirely what we were going for and I knew I had the skill to make something unique and special for us.
+There are many no-code tools specifically for wedding websites, and many will even sell themed invitations too. They are easy to use and well optimized for the use case. They also tend to be very formal and impersonal. This wasn't entirely what we were going for and I knew I had the skill to make something unique and special for us.
 
 ## What We Made
 

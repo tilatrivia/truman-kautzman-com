@@ -8,7 +8,7 @@
 
         {{ range $page := .Pages }}
         <article class="flex flex-col gap-8 mt-8">
-            <a class="p-8 bg-gray-light hover:bg-green-light text-dark hover:text-dark" href="{{ .Permalink }}">
+            <a class="p-8 bg-gray-light hover:bg-green-light text-dark hover:text-dark" href="{{ .RelPermalink }}">
 
                 <div class="flex flex-col md:flex-row justify-between">
                     <h2>{{ .Title }}</h2>

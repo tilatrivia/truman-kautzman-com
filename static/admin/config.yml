@@ -22,15 +22,14 @@ collections:
       - { label: 'View Link', name: 'link', widget: 'string' }
       - { label: 'Source Link', name: 'source', widget: 'string' }
       - { label: 'Weight', name: 'weight', widget: 'string' }
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'articles'
+    label: 'Articles'
+    folder: 'content/articles'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }

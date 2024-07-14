@@ -9,7 +9,7 @@ media_folder: static/img
 public_folder: /img
 collections:
   - name: 'projects'
-    label: 'Projects'
+    label: 'Project'
     folder: 'content/projects'
     create: true
     slug: '{{slug}}/index.md'
@@ -22,9 +22,9 @@ collections:
       - { label: 'View Link', name: 'link', widget: 'string' }
       - { label: 'Source Link', name: 'source', widget: 'string' }
       - { label: 'Weight', name: 'weight', widget: 'string' }
-      - { label: 'Content', name: 'content', widget: 'markdown' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'articles'
-    label: 'Articles'
+    label: 'Article'
     folder: 'content/articles'
     create: true
     slug: '{{slug}}/index.md'
@@ -34,4 +34,4 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Content', name: 'content', widget: 'markdown' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

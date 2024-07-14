@@ -1,10 +1,8 @@
 ---
-title: "Inspiration"
+title: "Some Interesting People"
+date: "2024-05-23"
+description: These are just a few people whose work I find interesting.
 ---
-
-Here is a collection of some things that I like, relate to, and take inspiration from and why.
-
-
 
 ## Tantacrul
 
@@ -22,7 +20,7 @@ Tantacrul, also know as Martin Keary, is a Youtuber who focuses on design, music
 
 ## Mary Blair
 
-Mary Blair was an influential modernist artist who worked directly with Walt Disney to give his films and theme park attractions incredible visuals. Think "Its a Small World," that's her visual style. Modernist art has unfortunately been often resigned to children's content. I think it is the fun side of the otherwise stoic mid-century modern style. I find her bold use of color and shape to be creative and interesting. Perhaps this site uses some of those ideas. Learn more about Mary Blare [here](https://magicofmaryblair.com/mary-blair-gallery/).
+Mary Blair was an influential modernist artist who worked directly with Walt Disney to give his films and theme park attractions incredible visuals. Think "Its a Small World," that's her visual style. Modernist art has unfortunately been often resigned to children's content. I think it is the fun side of the otherwise stoic mid-century modern style. I find her bold use of color and shape to be creative and interesting. You'll see some Mary Blair in how I designed this site.
 
 {{< box title="More About Mary Blair" class="bg-blue-light mt-4" >}}
     {{< buttons >}}

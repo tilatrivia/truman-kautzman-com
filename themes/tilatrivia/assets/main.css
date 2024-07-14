@@ -5,7 +5,7 @@
 
 @layer base {
     body {
-        @apply text-dark flex flex-col min-h-screen
+        @apply text-dark bg-light flex flex-col min-h-screen
     }
 
     main {
@@ -87,7 +87,7 @@
 
 /* Filters */
 .filter-white {
-    filter: invert(100%);
+    filter: saturate(0%) brightness(0%) invert(100%);
 }
 
 .filter-light {
@@ -99,7 +99,7 @@
 }
 
 .filter-green {
-    filter: invert(68%) sepia(59%) saturate(6779%) hue-rotate(92deg) brightness(106%) contrast(75%);
+    filter: invert(35%) sepia(99%) saturate(739%) hue-rotate(86deg) brightness(105%) contrast(84%);
 }
 
 .filter-blue {
@@ -122,7 +122,6 @@
         @apply border-solid border-[5px]
     }
 
-
     /* TK Underline */
     .tk-underline {
         @apply relative;
@@ -144,7 +143,7 @@
     }
 
     .tk-list-item::before {
-        @apply block bg-blue absolute w-2 h-2 -left-4 top-3;
+        @apply block bg-green absolute w-2 h-2 -left-4 top-3;
         content: '';
     }
 
@@ -177,7 +176,43 @@
         top: 0;
         left: 0;
     }
+
     
+    /* TK Image Carousel */
+    div.tk-carousel-image p {
+        @apply text-light text-center h-7 mb-8
+    }
+
+    div.tk-carousel-image img {
+        @apply w-full h-full max-h-[36rem] aspect-square object-contain
+    }
+
+
+    /* TK Dev Icon Grid */
+    .tk-dev-icons-grid {
+        @apply grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4 mt-4
+    }
+
+    .tk-dev-icons-grid > div {
+        @apply relative aspect-square flex items-center justify-center text-center p-2 overflow-hidden
+    }
+
+    .tk-dev-icons-grid > div > img {
+        @apply w-2/3 m-auto filter-white
+    }
+
+    .tk-dev-icons-grid > div > div {
+        @apply absolute opacity-0 bg-light/80 w-full h-full m-0 flex items-center justify-center
+    }
+
+    .tk-dev-icons-grid > div > div > p {
+        @apply text-center font-bold text-[18pt]
+    }
+
+    .tk-dev-icons-grid > div:hover > div {
+        @apply opacity-100 transition-opacity
+    }
+
 
     /* TK Button */
     .tk-buttons {

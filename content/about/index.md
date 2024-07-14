@@ -2,34 +2,11 @@
 title: "About"
 ---
 
+Hi, I’m Truman Kautzman. I really enjoy making delightful tools and software is my medium. I recently graduated with a degree in computer science to further my ability to make such tools. I have experience with numerous technologies and familiarity with many domains.
+
 ## Qualifications
 
-{{< columns-3 >}}
-    {{< box title="Languages" class="bg-green-light" >}}
-        {{< list-item "C and C++">}}
-        {{< list-item "Java and Kotlin">}}
-        {{< list-item "Python">}}
-        {{< list-item "HTML and CSS">}}
-        {{< list-item "JavaScript and TypeScript">}}
-    {{< /box >}}
-
-    {{< box title="Technologies" class="bg-green-light" >}}
-        {{< list-item "Vue and Vue TypeScript">}}
-        {{< list-item "React TypeScript">}}
-        {{< list-item "Flutter Dart">}}
-        {{< list-item "Java Android">}}
-        {{< list-item "Micronaut">}}
-        {{< list-item "Storybook">}}
-    {{< /box >}}
-
-    {{< box title="Skills" class="bg-green-light" >}}
-        {{< list-item "Software Design Principles and Patterns">}}
-        {{< list-item "User Experience Design">}}
-        {{< list-item "Proficiency with Testing and Formal Verification">}}
-        {{< list-item "Effective Interpersonal and Technical Communication">}}
-        {{< list-item "Understanding of the Big Picture and Focus on Details">}}
-    {{< /box >}}
-{{< /columns-3 >}}
+{{< dev-icons-grid >}}
 
 ## Education
 
@@ -47,7 +24,7 @@ Course work included web development, data structures, discrete math, computer s
     subtitle="Imagine Learning - Remote - May 2023 to Present"
     class="bg-gray-light mt-4"
 >}}
-As my first exposure to industry software production, I was exposed to large-scale software challenges and solutions, scalability and cost considerations, and Agile development practices. I became familiar with working on a team to divide and conquer and deliver business value. Here I wrote several production React TypeScript components and Kotlin Micronaut endpoints.
+As my first exposure to industry software production, I was exposed to large-scale software challenges and solutions, scalability and cost considerations, and Agile development practices. I became comfortable with working on a team to decompose work and deliver business value. I built several React TypeScript components and Kotlin Micronaut microservices.
 {{< /box >}}
 
 
@@ -88,7 +65,7 @@ My approach to a project focuses on quality and considerate decision making. I a
 
 {{< columns-4 >}}
 
-    {{< box title="User Experience Design" class="bg-blue-light" >}}
+    {{< box title="User Experience Design" class="bg-green-light" >}}
     Design refines the near endless possibilities of computing into optimal solutions. I believe software can compliment and enhance many processes, removing the rote and leaving the creative and inventive tasks for people.
     {{< /box >}}
 
@@ -96,11 +73,11 @@ My approach to a project focuses on quality and considerate decision making. I a
     I approach any problem with the overarching goals at the forefront of my mind. Seeking solutions that satisfy not just short term goals, but those related to the larger impacts and ambitions of a project.
     {{< /box >}}
 
-    {{< box title="Refining the Smaller Details" class="bg-gray-light" >}}
+    {{< box title="Refining the Smaller Details" class="bg-green-light" >}}
     Crossing 't's and dotting 'i's may not be most people's idea of fun, but I find tackling the minutia very satisfying as they often add up to having a large impact on the whole product.
     {{< /box >}}
 
-    {{< box title="Communicating Complexity" class="bg-blue-light" >}}
+    {{< box title="Communicating Complexity" class="bg-green-light" >}}
     Technical topics are not easy to talk about and decision making is a tough task. I can explain complex subjects with clarity and simplicity, allowing all involved to have a better picture of the relevant problems and solutions.
     {{< /box >}}
 
@@ -113,7 +90,7 @@ I am a curious person and have many wide ranging interests and am sure to have m
 
 {{< columns-3 >}}
 
-    {{< box title="Music" class="bg-gray-light" >}}
+    {{< box title="Music" class="bg-blue-light" >}}
     I have played the French horn for 12 years. I love contributing to an ensemble of musicians, from quintets to marching bands, and admiring what beauty many can come together to accomplish. I also dabble in music composition (ask me about music notation software) and marching drill writing. (However, I don't have a ton of positives about drill writing software)
     {{< /box >}}
 
@@ -121,7 +98,7 @@ I am a curious person and have many wide ranging interests and am sure to have m
     For several years, I have had the opportunity to contribute to events large and small by lighting them. I have loved learning the intricacies of the technology and art of lighting. I've found a knack for lighting control software and love speculating about what is happening under the hood.
     {{< /box >}}
 
-    {{< box title="The Built Environment" class="bg-green-light" >}}
+    {{< box title="The Built Environment" class="bg-blue-light" >}}
     I really admire the things we have built and invented for our use. Architecture, urban planning, civil engineering, and transportation fascinate me with their complex problems and genius solutions. I find designing interiors, layouts, roads, and transport networks a fun challenge.
     {{< /box >}}
 

@@ -1,0 +1,55 @@
+<div class="tk-carousel bg-dark p-8 mt-4">
+    <div class="tk-carousel-images">
+        {{ .Inner }}
+    </div>
+    <div class="flex flex-row justify-center gap-4 mt-8">
+        <button class="tk-carousel-prev tk-button tk-button-gray w-24">&lt;</button>
+        <button class="tk-carousel-count tk-button tk-button-gray w-24">1/1</button>
+        <button class="tk-carousel-next tk-button tk-button-gray w-24">&gt;</button>
+    </div>
+</div>
+
+<script>
+var loaded = false
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (loaded) return
+    loaded = true
+
+    document.querySelectorAll('.tk-carousel').forEach(carousel => {
+        const images = carousel.querySelectorAll('.tk-carousel-images > div');
+        console.log(carousel, images)
+        const prevButton = carousel.querySelector('.tk-carousel-prev')
+        const countButton = carousel.querySelector('.tk-carousel-count');
+        const nextButton = carousel.querySelector('.tk-carousel-next')
+
+        let currentIndex = 0;
+
+        if (images.length > 0) {
+            showImage(currentIndex)
+        }
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('hidden', i !== index);
+            });
+            countButton.innerHTML = (currentIndex + 1) + '/' + (images.length)
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            showImage(currentIndex);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        });
+
+        countButton.addEventListener('click', () => {
+            currentIndex = 0
+            showImage(currentIndex)
+        })
+    })
+})
+</script>

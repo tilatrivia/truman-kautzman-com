@@ -10,7 +10,7 @@
     <div class="max-w-screen-xl my-0 mx-auto py-32 px-4 relative z-10">
         <div class="bg-gray-light tk-border border-gray p-8">
             <h1>{{ .Title }}</h1>
-            <p>{{ .Description }}</p>
+            <p class="description">{{ .Description }}</p>
             <div class="tk-buttons mt-4">
                 {{ with .Params.link }}
                 <a class="tk-button tk-button-green" href="{{ . }}">Visit</a>
@@ -25,7 +25,7 @@
 </div>
 
 <main>
-    <div class="tk-container">
+    <div class="content tk-container">
         {{ .Content }}
     </div>
 </main>

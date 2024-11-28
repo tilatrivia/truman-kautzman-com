@@ -1,6 +1,15 @@
 <header class="bg-green">
-    <div class="tk-container py-8 flex flex-col md:flex-row justify-between gap-4">
-        <a class="text-light hover:text-light hover:tk-underline" href="{{ .Site.BaseURL }}"><h1>Truman Kautzman</h1></a>
+    <div class="tk-container py-8 flex flex-col lg:flex-row justify-between gap-4">
+        <!-- Large Screens -->
+        <a id="text-logo-fades" class="hidden md:block" href="{{ .Site.BaseURL }}">
+            <object width="520" type="image/svg+xml" data="/truman-kautzman-text-logo-fades.svg" class="pointer-events-none"></object>
+        </a>
+
+        <!-- Small Screens -->
+        <a id="text-logo-fades" class="block md:hidden" href="{{ .Site.BaseURL }}">
+            <object width="280" type="image/svg+xml" data="/truman-kautzman-text-logo-wrapped.svg" class="pointer-events-none"></object>
+        </a>
+
         <ul class="tk-buttons">
             {{ range.Site.Menus.main }}
             <li>
@@ -9,6 +18,46 @@
             {{ end }}
         </ul>
     </div>
+
+    <script>
+        const container = document.getElementById('text-logo-fades')
+        
+        const svgContainer = container.children[0]
+        const svgDocument = svgContainer.contentDocument
+        const fade1 = svgDocument.getElementById('fade-1')
+        const fade2 = svgDocument.getElementById('fade-2')
+        const fade3 = svgDocument.getElementById('fade-3')
+        
+        svgContainer.addEventListener('load', () => {
+
+            console.log("LOAD")
+
+            setTransforms(0, 4)
+
+            container.addEventListener('mousemove', (event) => {
+                const rect = svgContainer.getBoundingClientRect()
+
+                const percentX = (event.clientX - rect.left) / rect.width
+                const percentY = (event.clientY - rect.top) / rect.height
+
+                const shiftX = percentX * 6 - 3
+                const shiftY = percentY * 5
+
+                setTransforms(shiftX, shiftY)
+            })
+
+            container.addEventListener('mouseleave', (event) => {
+                setTransforms(0, 4)
+            })
+        })
+
+        const setTransforms = function(shiftX, shiftY) {
+            fade1.setAttribute('transform', `translate(${shiftX} ${shiftY})`)
+            fade2.setAttribute('transform', `translate(${shiftX * 2} ${shiftY * 2})`)
+            fade3.setAttribute('transform', `translate(${shiftX * 3} ${shiftY * 3})`)
+        }
+
+    </script>
 </header>
 
 

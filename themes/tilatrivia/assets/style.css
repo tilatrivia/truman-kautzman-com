@@ -653,6 +653,34 @@ main h1:first-child,
   --tw-contain-style:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 24rem){
+  .container{
+    max-width: 24rem;
+  }
+}
+
+@media (min-width: 48rem){
+  .container{
+    max-width: 48rem;
+  }
+}
+
+@media (min-width: 64rem){
+  .container{
+    max-width: 64rem;
+  }
+}
+
+@media (min-width: 80rem){
+  .container{
+    max-width: 80rem;
+  }
+}
+
 /* TK Border */
 
 .tk-border{
@@ -905,6 +933,10 @@ main .tk-buttons{
   filter: saturate(0%) brightness(0%) invert(100%);
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .relative{
   position: relative;
 }
@@ -926,10 +958,6 @@ main .tk-buttons{
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
 }
 
 .mt-2{
@@ -972,6 +1000,10 @@ main .tk-buttons{
   height: 16rem;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .w-24{
   width: 6rem;
 }
@@ -990,6 +1022,10 @@ main .tk-buttons{
 
 .flex-1{
   flex: 1 1 0%;
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1{
@@ -1139,6 +1175,16 @@ main .tk-buttons{
   background-color: rgb(15 73 189 / var(--tw-bg-opacity));
 }
 
+.bg-blue-fade-dark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 131 208 / var(--tw-bg-opacity));
+}
+
+.bg-blue-fade-light{
+  --tw-bg-opacity: 1;
+  background-color: rgb(172 191 228 / var(--tw-bg-opacity));
+}
+
 .bg-blue-light{
   --tw-bg-opacity: 1;
   background-color: rgb(161 190 247 / var(--tw-bg-opacity));
@@ -1266,21 +1312,6 @@ main .tk-buttons{
   filter: invert(35%) sepia(0%) saturate(1746%) hue-rotate(193deg) brightness(93%) contrast(81%);
 }
 
-.hover\:tk-underline:hover{
-  position: relative;
-}
-
-.hover\:tk-underline:hover:after{
-  position: absolute;
-  top: 3rem;
-  display: block;
-  height: 5px;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 73 189 / var(--tw-bg-opacity));
-  content: '';
-}
-
 .hover\:bg-green-light:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(166 222 170 / var(--tw-bg-opacity));
@@ -1291,12 +1322,15 @@ main .tk-buttons{
   color: rgb(32 32 32 / var(--tw-text-opacity));
 }
 
-.hover\:text-light:hover{
-  --tw-text-opacity: 1;
-  color: rgb(247 247 247 / var(--tw-text-opacity));
-}
-
 @media (min-width: 48rem){
+  .md\:block{
+    display: block;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:h-auto{
     height: auto;
   }
@@ -1321,6 +1355,10 @@ main .tk-buttons{
 @media (min-width: 64rem){
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
   }
 }
 

@@ -1004,6 +1004,10 @@ main .tk-buttons{
   height: 2rem;
 }
 
+.h-2{
+  height: 0.5rem;
+}
+
 .w-24{
   width: 6rem;
 }

@@ -945,8 +945,12 @@ main .tk-buttons{
   z-index: 10;
 }
 
-.z-50{
-  z-index: 50;
+.z-\[101\]{
+  z-index: 101;
+}
+
+.z-\[102\]{
+  z-index: 102;
 }
 
 .mx-auto{
@@ -1318,11 +1322,6 @@ main .tk-buttons{
 .text-light{
   --tw-text-opacity: 1;
   color: rgb(247 247 247 / var(--tw-text-opacity));
-}
-
-.text-blue{
-  --tw-text-opacity: 1;
-  color: rgb(15 73 189 / var(--tw-text-opacity));
 }
 
 .transition-\[background-color\]{

@@ -1,6 +1,7 @@
 
+document.addEventListener('keyup', () => console.log(document.activeElement))
+
 const nav = document.getElementById('tk-nav')
-const navToggle = document.getElementById('tk-nav-toggle')
 const navOverlay = document.getElementById('tk-nav-overlay')
 
 let visible = false
@@ -29,7 +30,10 @@ const toggleClass = (element, openClass, closedClass) => {
     }
 }
 
-navToggle.addEventListener('click', () => setVisible(!visible))
+nav.addEventListener('focusin', () => setVisible(true))
+nav.addEventListener('focusout', () => setVisible(false))
 navOverlay.addEventListener('click', () => setVisible(!visible))
+document.getElementById('tk-nav-toggle').addEventListener('click', () => setVisible(!visible))
+
 
 setVisible(false)

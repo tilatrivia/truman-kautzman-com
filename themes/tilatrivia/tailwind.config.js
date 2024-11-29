@@ -28,7 +28,7 @@ module.exports = {
     },
     safelist: [
         'h-0',
-        'h-full',
+        'h-min',
         'bg-black/0',
         'bg-black/50',
     ],

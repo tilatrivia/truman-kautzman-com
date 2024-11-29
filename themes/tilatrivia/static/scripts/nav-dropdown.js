@@ -8,7 +8,13 @@ let visible = false
 const setVisible = (newVisible) => {
     visible = newVisible
 
-    toggleClass(nav, 'h-full', 'h-0')
+    // toggleClass(nav, 'h-min', 'h-0')
+    if (visible) {
+        nav.style.height = nav.scrollHeight + 'px'
+    } else {
+        nav.style.height = '0px'
+    }
+
     toggleClass(navOverlay, 'bg-black/50', 'bg-black/0')
     toggleClass(navOverlay, 'pointer-events-auto', 'pointer-events-none')
 }

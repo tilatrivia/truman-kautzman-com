@@ -1,27 +1,55 @@
 <header class="bg-green sticky top-0 z-50">
-    <div class="tk-container py-4 flex flex-col lg:flex-row justify-between gap-4">
+    <div class="tk-container py-4 flex flex-row justify-between">
         <!-- Large Screens -->
         <a class="tk-fade-hover hidden md:block" href="{{ .Site.BaseURL }}">
-            <object height="68" type="image/svg+xml" data="/truman-kautzman-text-logo-fades.svg" class="pointer-events-none"></object>
+            <object height="68" type="image/svg+xml" data="/images/truman-kautzman-text-logo-fades.svg" class="pointer-events-none"></object>
         </a>
 
         <!-- Small Screens -->
-        <a class="block md:hidden" href="{{ .Site.BaseURL }}">
-            <object height="96" type="image/svg+xml" data="/truman-kautzman-text-logo-wrapped.svg" class="pointer-events-none" alt></object>
+        <a class="block md:hidden pl-2" href="{{ .Site.BaseURL }}">
+            <object height="72" type="image/svg+xml" data="/images/truman-kautzman-text-logo-wrapped.svg" class="pointer-events-none" alt></object>
         </a>
 
-        <button id="tk-nav-toggle" class="text-xl">
-            ☰
+        <button id="tk-nav-toggle" class="w-min">
+            <div class="tk-fade-hover pointer-events-none md:pointer-events-auto">
+                <object height="52" type="image/svg+xml" data="/images/nav-menu-fade.svg" class="pointer-events-none"></object>
+            </div>
         </button>
     </div>
 
     <!-- Nav -->
     <div id="tk-nav" class="absolute overflow-hidden bg-green top-full left-0 w-full transition-[height] duration-100 ease-out h-0">
         <div class="tk-container py-4">
-            <nav class="tk-buttons flex-col md:flex-row">
-                {{ range.Site.Menus.main }}
-                    <a class="tk-button tk-button-blue text-light" href="{{ .URL }}">{{ .Name }}</a>
-                {{ end }}
+            <nav class="tk-buttons grid grid-cols-1 lg:grid-cols-3">
+                <!-- About -->
+                <div>
+                    <a class="tk-fade-hover pointer-events-none md:pointer-events-auto block w-min" href="/about">
+                        <object height="52" type="image/svg+xml" data="/images/nav-about-fade.svg" class="pointer-events-none"></object>
+                    </a>
+                    <p class="text-light p-3">
+                        The skills, qualifications, and experiences that enable me to solve complex problems.
+                    </p>
+                </div>
+
+                <!-- Projects -->
+                <div>
+                    <a class="tk-fade-hover pointer-events-none md:pointer-events-auto block w-min" href="/projects">
+                        <object height="52" type="image/svg+xml" data="/images/nav-projects-fade.svg" class="pointer-events-none"></object>
+                    </a>
+                    <p class="text-light p-3">
+                        A collection of projects that demonstrate my hard work and problem solving skills.
+                    </p>
+                </div>
+
+                <!-- Articles -->
+                <div>
+                    <a class="tk-fade-hover pointer-events-none md:pointer-events-auto block w-min" href="/articles">
+                        <object height="52" type="image/svg+xml" data="/images/nav-articles-fade.svg" class="pointer-events-none"></object>
+                    </a>
+                    <p class="text-light p-3">
+                        My thoughts on software, technology, design, and all sorts of other things.
+                    </p>
+                </div>
             </nav>
         </div>
     </div>

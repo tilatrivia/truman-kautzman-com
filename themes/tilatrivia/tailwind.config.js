@@ -8,7 +8,8 @@ module.exports = {
             xl: '80rem',
         },
         colors: {
-            'white': '#fffff',
+            'white': '#ffffff',
+            'black': '#000000',
             'light': '#f7f7f7',
             'dark': '#202020',
             'green': '#1E9E1A',
@@ -25,5 +26,11 @@ module.exports = {
             serif: ['Bitter', 'serif'],
         },
     },
+    safelist: [
+        'h-0',
+        'h-full',
+        'bg-black/0',
+        'bg-black/50',
+    ],
     plugins: [],
 }

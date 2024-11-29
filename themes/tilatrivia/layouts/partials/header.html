@@ -1,24 +1,33 @@
-<header class="bg-green">
-    <div class="tk-container py-8 flex flex-col lg:flex-row justify-between gap-4">
+<header class="bg-green sticky top-0 z-50">
+    <div class="tk-container py-4 flex flex-col lg:flex-row justify-between gap-4">
         <!-- Large Screens -->
-        <a class="fade-hover hidden md:block" href="{{ .Site.BaseURL }}">
-            <object height="60" type="image/svg+xml" data="/truman-kautzman-text-logo-fades.svg" class="pointer-events-none"></object>
+        <a class="tk-fade-hover hidden md:block" href="{{ .Site.BaseURL }}">
+            <object height="68" type="image/svg+xml" data="/truman-kautzman-text-logo-fades.svg" class="pointer-events-none"></object>
         </a>
 
         <!-- Small Screens -->
         <a class="block md:hidden" href="{{ .Site.BaseURL }}">
-            <object height="106" type="image/svg+xml" data="/truman-kautzman-text-logo-wrapped.svg" class="pointer-events-none"></object>
+            <object height="96" type="image/svg+xml" data="/truman-kautzman-text-logo-wrapped.svg" class="pointer-events-none" alt></object>
         </a>
 
-        <ul class="tk-buttons">
-            {{ range.Site.Menus.main }}
-            <li>
-                <a class="tk-button tk-button-blue text-light" href="{{ .URL }}">{{ .Name }}</a>
-            </li>
-            {{ end }}
-        </ul>
+        <button id="tk-nav-toggle" class="text-xl">
+            ☰
+        </button>
+    </div>
+
+    <!-- Nav -->
+    <div id="tk-nav" class="absolute overflow-hidden bg-green top-full left-0 w-full transition-[height] duration-100 ease-out h-0">
+        <div class="tk-container py-4">
+            <nav class="tk-buttons flex-col md:flex-row">
+                {{ range.Site.Menus.main }}
+                    <a class="tk-button tk-button-blue text-light" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+            </nav>
+        </div>
     </div>
 </header>
+
+<div id="tk-nav-overlay" class="fixed inset-0 bg-black/0 z-49 transition-[background-color] ease-out duration-100"></div>
 
 
 
